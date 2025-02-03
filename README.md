@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema de Gestão para Lojas de Roupas
 Este sistema foi um projeto desenvolvido no curso de Tecnologia em Análise e Desenvolvimento de Sistemas no segundo período na UniSales de Vitória - ES.
 
@@ -42,3 +43,7 @@ Um login é gerado com o email e o CPF, e o funcionário terá restrições no s
 ### Tela de cadastro de cargos (onde é possível selecionar as permissões no sistema)
 ![](docs/cadastro-cargo.png)
 
+=======
+# LojaDeRoupa
+Refatoração do sistema de loja de roupas em java
+>>>>>>> e50b067cd099955513651651351c4c68daa6f2b0
