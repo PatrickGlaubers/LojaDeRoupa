@@ -230,7 +230,7 @@ public class OfficeRegistration extends javax.swing.JDialog {
         
         try {
             if (!isEditing) {
-                Office office = instantiateOffice(new Office());
+                Office officeEdit = instantiateOffice(new Office());
                 
                 OfficeDao.insert(office);
                 JOptionPane.showMessageDialog(null, "Cargo cadastrado com sucesso.", "Atenção!",

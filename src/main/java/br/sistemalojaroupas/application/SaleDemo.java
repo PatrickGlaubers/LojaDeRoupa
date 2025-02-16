@@ -7,7 +7,6 @@ package br.sistemalojaroupas.application;
 
 
 import br.sistemalojaroupas.model.dao.SaleDao;
-import br.sistemalojaroupas.model.entities.Brand;
 import br.sistemalojaroupas.model.entities.Category;
 import br.sistemalojaroupas.model.entities.Color;
 import br.sistemalojaroupas.model.entities.Customer;

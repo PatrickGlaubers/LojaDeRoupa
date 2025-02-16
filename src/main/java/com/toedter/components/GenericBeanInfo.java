@@ -85,8 +85,9 @@ public class GenericBeanInfo extends SimpleBeanInfo {
 
 			case ICON_MONO_32x32 :
 				return iconMono32;
+                        default:
+                            return iconColor16;
 		}
 
-		return null;
 	}
 }

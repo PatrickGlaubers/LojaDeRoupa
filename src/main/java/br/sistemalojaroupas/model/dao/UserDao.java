@@ -11,7 +11,6 @@ import br.sistemalojaroupas.model.dao.exceptions.LoginException;
 import br.sistemalojaroupas.model.entities.Employee;
 import br.sistemalojaroupas.model.entities.User;
 import java.util.List;
-import javax.swing.JOptionPane;
 import org.dizitart.no2.FindOptions;
 import org.dizitart.no2.NitriteId;
 import org.dizitart.no2.SortOrder;

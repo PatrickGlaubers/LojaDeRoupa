@@ -42,7 +42,7 @@ public class User implements Serializable {
         permissions.put("homeinfo", true);
     }
 
-    public User(String userName, String password, int authentication) {
+    public User(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }

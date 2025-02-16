@@ -8,8 +8,6 @@ package br.sistemalojaroupas.model.dao;
 import br.sistemalojaroupas.db.DB;
 import br.sistemalojaroupas.model.entities.Sale;
 import br.sistemalojaroupas.model.entities.util.CodeGenerator;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;

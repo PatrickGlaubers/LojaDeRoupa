@@ -33,7 +33,6 @@ public class Employee implements Serializable, TableContract {
     private Date birthDate;
     private Date admissionDate;
     private Double salary;
-    
     private Address address;
     private Office office;
     
@@ -42,15 +41,19 @@ public class Employee implements Serializable, TableContract {
     public Employee() {
     }
 
-    public Employee(String cpf, String name, String email, String phone, Date birthDate, Date admissionDate, Double salary, Address address) {
-        this.cpf = cpf;
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-        this.birthDate = birthDate;
-        this.admissionDate = admissionDate;
-        this.salary = salary;
-        this.address = address;
+    public Employee(EmployeeBuilder builder) {
+        this.cpf = builder.cpf;
+        this.name = builder.name;
+        this.email = builder.email;
+        this.phone = builder.phone;
+        this.birthDate = builder.birthDate;
+        this.admissionDate = builder.admissionDate;
+        this.salary = builder.salary;
+        this.address = builder.address;
+    }
+
+    public static EmployeeBuilder builder() {
+        return new EmployeeBuilder();
     }
 
     public NitriteId getId() {
@@ -175,4 +178,64 @@ public class Employee implements Serializable, TableContract {
         };
     }
     
+    public static class EmployeeBuilder {
+        private String cpf;
+        private String name;
+        private String email;
+        private String phone;
+        private Date birthDate;
+        private Date admissionDate;
+        private Double salary;
+        private Address address;
+        private Office office;
+    
+        public EmployeeBuilder cpf(String cpf) {
+            this.cpf = cpf;
+            return this;
+        }
+    
+        public EmployeeBuilder name(String name) {
+            this.name = name;
+            return this;
+        }
+    
+        public EmployeeBuilder email(String email) {
+            this.email = email;
+            return this;
+        }
+    
+        public EmployeeBuilder phone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+    
+        public EmployeeBuilder birthDate(Date birthDate) {
+            this.birthDate = birthDate;
+            return this;
+        }
+    
+        public EmployeeBuilder admissionDate(Date admissionDate) {
+            this.admissionDate = admissionDate;
+            return this;
+        }
+    
+        public EmployeeBuilder salary(Double salary) {
+            this.salary = salary;
+            return this;
+        }
+    
+        public EmployeeBuilder address(Address address) {
+            this.address = address;
+            return this;
+        }
+    
+        public EmployeeBuilder office(Office office) {
+            this.office = office;
+            return this;
+        }
+    
+        public Employee build() {
+            return new Employee(this);
+        }
+    }
 }

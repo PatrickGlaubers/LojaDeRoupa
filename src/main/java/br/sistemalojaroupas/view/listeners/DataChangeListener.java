@@ -5,12 +5,16 @@
  */
 package br.sistemalojaroupas.view.listeners;
 
+import java.io.Serializable;
+
+
+
 
 /**
  *
  * @author silas
  */
-public interface DataChangeListener {
+public interface DataChangeListener extends Serializable{
     
     void onDataChanged();
     

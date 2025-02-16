@@ -45,6 +45,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
+import kotlin.jvm.Synchronized;
 
 /**
  * JDayChooser is a bean for choosing a day.
@@ -53,8 +54,7 @@ import javax.swing.UIManager;
  * @version $LastChangedRevision: 147 $
  * @version $LastChangedDate: 2011-06-06 20:36:53 +0200 (Mo, 06 Jun 2011) $
  */
-public class JDayChooser extends JPanel implements ActionListener, KeyListener,
-		FocusListener {
+public class JDayChooser extends JPanel implements ActionListener, KeyListener{
 	private static final long serialVersionUID = 5876398337018781820L;
 
 	protected JButton[] days;
@@ -160,13 +160,11 @@ public class JDayChooser extends JPanel implements ActionListener, KeyListener,
 
 						public void paint(Graphics g) {
 							if ("Windows".equals(UIManager.getLookAndFeel()
-									.getID())) {
-								// this is a hack to get the background painted
-								// when using Windows Look & Feel
-								if (selectedDay == this) {
+									.getID()) && selectedDay == this) {
+							
 									g.setColor(selectedColor);
 									g.fillRect(0, 0, getWidth(), getHeight());
-								}
+								
 							}
 							super.paint(g);
 						}
@@ -174,7 +172,7 @@ public class JDayChooser extends JPanel implements ActionListener, KeyListener,
 					};
 					days[index].addActionListener(this);
 					days[index].addKeyListener(this);
-					days[index].addFocusListener(this);
+					//days[index].addFocusListener(this);
 				}
 
 				days[index].setMargin(new Insets(0, 0, 0, 0));
@@ -595,24 +593,7 @@ public class JDayChooser extends JPanel implements ActionListener, KeyListener,
 	 * next day button. This causes the date chosen to always be incremented by
 	 * one day.
 	 */
-	public void focusGained(FocusEvent e) {
-		// JButton button = (JButton) e.getSource();
-		// String buttonText = button.getText();
-		//
-		// if ((buttonText != null) && !buttonText.equals("") &&
-		// !e.isTemporary()) {
-		// actionPerformed(new ActionEvent(e.getSource(), 0, null));
-		// }
-	}
-
-	/**
-	 * Does nothing.
-	 * 
-	 * @param e
-	 *            the FocusEvent
-	 */
-	public void focusLost(FocusEvent e) {
-	}
+	
 
 	/**
 	 * JDayChooser is the KeyListener for all day buttons. (Added by Thomas
@@ -622,11 +603,8 @@ public class JDayChooser extends JPanel implements ActionListener, KeyListener,
 	 *            the KeyEvent
 	 */
 	public void keyPressed(KeyEvent e) {
-		int offset = (e.getKeyCode() == KeyEvent.VK_UP) ? (-7) : ((e
-				.getKeyCode() == KeyEvent.VK_DOWN) ? (+7)
-				: ((e.getKeyCode() == KeyEvent.VK_LEFT) ? (-1) : ((e
-						.getKeyCode() == KeyEvent.VK_RIGHT) ? (+1) : 0)));
-
+		int offset = verifyButtonsPressioneds(e);
+                                                
 		int newDay = getDay() + offset;
 
 		if ((newDay >= 1)
@@ -634,6 +612,33 @@ public class JDayChooser extends JPanel implements ActionListener, KeyListener,
 			setDay(newDay);
 		}
 	}
+        
+        public int verifyButtonsPressioneds(KeyEvent e){
+            int offset;
+            switch (e.getKeyCode()) {
+                case KeyEvent.VK_UP -> {
+                    offset = -7;
+                    break;
+                }
+                case KeyEvent.VK_DOWN -> {
+                    offset = +7;
+                    break;
+                }
+                case KeyEvent.VK_LEFT -> {
+                    offset = -1;
+                    break;
+                }
+                case KeyEvent.VK_RIGHT -> {
+                    offset = +1;
+                    break;
+                }
+                default -> {
+                    offset = 0;
+                    break;
+                }
+            }
+            return offset;
+        }
 
 	/**
 	 * Does nothing.
@@ -1004,7 +1009,8 @@ public class JDayChooser extends JPanel implements ActionListener, KeyListener,
 			setBorderPainted(decorationBordersVisible);
 		}
 
-		public void addMouseListener(MouseListener l) {
+                @Override
+		 public synchronized void addMouseListener(MouseListener l) {
 		}
 
 		public boolean isFocusable() {

@@ -5,8 +5,6 @@
  */
 package br.sistemalojaroupas.model.entities.util;
 
-import br.sistemalojaroupas.db.DB;
-import br.sistemalojaroupas.model.entities.Product;
 import java.io.Serializable;
 import java.util.Objects;
 import org.dizitart.no2.objects.Id;
@@ -36,8 +34,8 @@ public class CodeGenerator implements Serializable {
         return classType;
     }
     
-    public Class getObjClass() {
-        return this.getClass();
+    public Class<? extends CodeGenerator> getObjClass() {
+        return this.getClass().asSubclass(CodeGenerator.class);
     }
 
     public Long getLastCode() {

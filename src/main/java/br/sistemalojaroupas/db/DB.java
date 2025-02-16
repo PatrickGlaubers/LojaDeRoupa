@@ -13,15 +13,19 @@ import org.dizitart.no2.Nitrite;
  */
 public class DB {
     
-    private static Nitrite db = null;
+    private DB(){
+        
+    }
+    
+    private static Nitrite database = null;
     
     /**
      * Inicia a conexão com o banco de dados caso seja nulo. 
      * Não é possível iniciar a conexão mais de uma vez.
      */
     public static void start() {
-        if (db == null) {
-            db = Nitrite.builder()
+        if (database == null) {
+            database = Nitrite.builder()
                     .compressed()
                     .filePath("dataBase.db")
                     .openOrCreate("dev", "73313391");
@@ -35,10 +39,10 @@ public class DB {
      * @return O atributo Nitrite db com a conexão
      */
     public static Nitrite getDB() {
-        if (db == null) {
+        if (database == null) {
             start();
         }
-        return db;
+        return database;
     }
     
     /**
@@ -46,8 +50,8 @@ public class DB {
      * É importante utilizar este método quando não há mais uso do banco.
      */
     public static void close() {
-        if (db != null) {
-            db.close();
+        if (database != null) {
+            database.close();
         }
     }
     
@@ -56,7 +60,7 @@ public class DB {
      * @return Retorna true caso esteja fechado.
      */
     public static boolean isClosed() {
-        if (db != null) return db.isClosed();
+        if (database != null) return database.isClosed();
         return true;
     }
     

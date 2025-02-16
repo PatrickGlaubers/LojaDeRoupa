@@ -25,10 +25,8 @@ import br.sistemalojaroupas.view.registration.Change_Password;
 import br.sistemalojaroupas.view.sale.SaleInfo;
 import br.sistemalojaroupas.view.stock.Add_Product;
 import br.sistemalojaroupas.view.util.Utils;
-import com.google.gson.annotations.Until;
 import java.awt.CardLayout;
 import java.awt.Dimension;
-import java.awt.MouseInfo;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.text.ParseException;
@@ -38,17 +36,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.text.Utilities;
-//import jdk.jshell.execution.Util;
-import jdk.jshell.execution.Util;
 
 /**
  *
@@ -1974,10 +1966,10 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
     private void btn_MaxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MaxMouseClicked
         // Max
-        if (this.getExtendedState() != Home.MAXIMIZED_BOTH) {
-            this.setExtendedState(Home.MAXIMIZED_BOTH);
+        if (this.getExtendedState() != java.awt.Frame.MAXIMIZED_BOTH) {
+            this.setExtendedState(java.awt.Frame.MAXIMIZED_BOTH);
         } else {
-            this.setExtendedState(Home.NORMAL);
+            this.setExtendedState(java.awt.Frame.NORMAL);
         }
     }//GEN-LAST:event_btn_MaxMouseClicked
 
@@ -1991,7 +1983,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
     private void btn_MinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MinMouseClicked
         // Min
-        this.setExtendedState(Home.ICONIFIED);
+        this.setExtendedState(java.awt.Frame.ICONIFIED);
     }//GEN-LAST:event_btn_MinMouseClicked
 
     private void btn_ShowHideMenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ShowHideMenuMouseEntered
@@ -2280,9 +2272,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
                 Utils.updateTable(CustomerDao.findAll(), tableCustomers);
             }
         }
-        else {
-            
-        }
+        
     }//GEN-LAST:event_btnRemoveCustomerMouseClicked
 
     private void btnNewCustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewCustomerMouseClicked

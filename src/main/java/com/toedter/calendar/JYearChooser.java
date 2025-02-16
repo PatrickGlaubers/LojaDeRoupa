@@ -65,8 +65,8 @@ public class JYearChooser extends JSpinField {
         if (dayChooser != null) {
             dayChooser.setYear(value);
         }
-
-        spinner.setValue(new Integer(value));
+        Integer valueConverted = value;
+        spinner.setValue(value);
         firePropertyChange("year", oldYear, value);
         oldYear = value;
     }

@@ -74,12 +74,6 @@ public class Register_And_Edit_Products extends javax.swing.JDialog {
         listeners.add(listener);
     }
     
-    private void notifyDataChangeListeners() {
-        listeners.forEach(listener ->{
-            listener.onDataChanged();
-        });
-    }
-    
     private void setAllComboBoxRenderer() {
         for (Component c : pnl_Background.getComponents()) {
             if (c instanceof JComboBox) ((JComboBox)c).setRenderer(new ComboBoxRenderer());

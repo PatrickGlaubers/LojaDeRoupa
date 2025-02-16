@@ -22,7 +22,9 @@ import org.dizitart.no2.objects.filters.ObjectFilters;
  * @author Marquinhos
  */
 public class CategoryDao {
-    private static ObjectRepository<Category> repCategory;
+    private final static ObjectRepository<Category> repCategory;
+    private final static String CATEGORY = "category";
+    
     
     static {
         repCategory = DB.getDB().getRepository(Category.class);
@@ -37,7 +39,7 @@ public class CategoryDao {
     }
    
     public static void update(Category c) {
-        Category temp = repCategory.find(ObjectFilters.eq("category", c.getCategory()))
+        Category temp = repCategory.find(ObjectFilters.eq(CATEGORY, c.getCategory()))
                 .firstOrDefault();
         
         if (c.equals(temp) || temp == null) {
@@ -55,7 +57,7 @@ public class CategoryDao {
     }
     
     public static List<Category> findAll() {
-        FindOptions fo = FindOptions.sort("category", SortOrder.Ascending);
+        FindOptions fo = FindOptions.sort(CATEGORY, SortOrder.Ascending);
         List<Category> list = repCategory.find(fo).toList();
         return list;
     }
@@ -66,13 +68,13 @@ public class CategoryDao {
     }
     
     public static Category findByName(String name) {
-        Category category = repCategory.find(ObjectFilters.eq("category", name)).firstOrDefault();
+        Category category = repCategory.find(ObjectFilters.eq(CATEGORY, name)).firstOrDefault();
         return category;
     }
     
     public static List<Category> search(String arg0) {
-        List<Category> list = repCategory.find(ObjectFilters.regex("category", arg0),
-                FindOptions.sort("category", SortOrder.Ascending)).toList();
+        List<Category> list = repCategory.find(ObjectFilters.regex(CATEGORY, arg0),
+                FindOptions.sort(CATEGORY, SortOrder.Ascending)).toList();
         
         return list;
     }

@@ -5,6 +5,10 @@
  */
 package br.sistemalojaroupas.view.util;
 
+import br.sistemalojaroupas.Exceptions.InvalidDateException;
+import br.sistemalojaroupas.Exceptions.InvalidValueException;
+import br.sistemalojaroupas.Exceptions.ObjectNullException;
+import br.sistemalojaroupas.Exceptions.TextNullException;
 import br.sistemalojaroupas.model.entities.Brand;
 import br.sistemalojaroupas.model.entities.Category;
 import br.sistemalojaroupas.model.entities.Color;
@@ -63,39 +67,66 @@ public class Utils {
         }
     } 
     
-    public static boolean isAllFieldsFilled(JPanel pn) {
+    public static boolean isAllFieldsFilled(JPanel panel) {
         
-        for (Component c : pn.getComponents()) {
-            if (c instanceof JComboBox) {
-                int i = ((JComboBox)c).getSelectedIndex();
-                if (i < 1) return false;
-            }
-            if (c instanceof JTextField) {
-                String s = ((JTextField)c).getText();
-                if (s.trim().equals("")) return false;
-            }
-            if (c instanceof JFormattedTextField) {
-                try {
-                    ((JFormattedTextField)c).commitEdit();
-                } catch (ParseException e) {
-                    return false;
-                }
-                Object obj = ((JFormattedTextField)c).getValue();
-                if (obj == null) {
-                    return false;
-                }
-            }
-            if (c instanceof JDateChooser) {
-                JDateChooser dc = (JDateChooser) c;
-                if (dc.getDate() == null) {
-                    return false;
-                }
-                if (dc.getDate().before(dc.getMinSelectableDate()) || dc.getDate().after(dc.getMaxSelectableDate())) {
-                    return false;
-                }
+        for (Component component : panel.getComponents()) {
+            try{
+                verifyJComboBox(component);
+                verifyJTextField(component);
+                verifyJFormattedTextField(component);
+                verifyJDateChooser(component);
+            }catch(Exception e){
+                return false;
             }
         }
         return true;
+    }
+    
+    
+    
+    public static void verifyJComboBox(Component component) throws InvalidValueException{
+        if (component instanceof JComboBox) {
+                int itemSelected = ((JComboBox)component).getSelectedIndex();
+                if (itemSelected < 1){
+                    throw new InvalidValueException();
+                }
+       }
+    }
+    
+    public static void verifyJTextField(Component component) throws TextNullException{
+        if (component instanceof JTextField) {
+                String textInsert = ((JTextField)component).getText();
+                if (textInsert.trim().equals("")){
+                    throw new TextNullException();
+                }
+        }
+    }
+    
+    public static void verifyJFormattedTextField(Component component) throws InvalidValueException, ObjectNullException{
+        if (component instanceof JFormattedTextField) {
+                try {
+                    ((JFormattedTextField)component).commitEdit();
+                } catch (ParseException e) {
+                    throw new InvalidValueException();
+                }
+                Object obj = ((JFormattedTextField)component).getValue();
+                if (obj == null) {
+                    throw new ObjectNullException();
+                }
+            }
+    }
+    
+    public static void verifyJDateChooser(Component component) throws InvalidDateException{
+        if (component instanceof JDateChooser) {
+                JDateChooser dateChooser = (JDateChooser) component;
+                if (dateChooser.getDate() == null) {
+                    throw new InvalidDateException();
+                }
+                if (dateChooser.getDate().before(dateChooser.getMinSelectableDate()) ||
+                    dateChooser.getDate().after(dateChooser.getMaxSelectableDate())) {
+                    throw new InvalidDateException();
+                }
+            }
     }
     
     public static Double tryParseToDouble(String arg) {

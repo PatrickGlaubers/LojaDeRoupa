@@ -40,6 +40,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import com.toedter.components.UTF8ResourceBundle;
+import java.util.logging.Logger;
 
 /**
  * JCalendar is a bean for entering a date by choosing the year, month and day.
@@ -80,6 +81,8 @@ public class JCalendar extends JPanel implements PropertyChangeListener {
 	private final JButton todayButton;
 
 	private final JButton nullDateButton;
+        
+        Logger logger = Logger.getLogger(getClass().getName());
 
 	/**
 	 * Default JCalendar constructor.
@@ -751,8 +754,7 @@ public class JCalendar extends JPanel implements PropertyChangeListener {
 			resourceBundle = UTF8ResourceBundle.getBundle(
 					"com.toedter.calendar.jcalendar", locale);
 		} catch (Exception e) {
-			// ignore, fall back to set texts or defaults
-			System.out.println(e.getMessage());
+			logger.info(e.getMessage());
 		}
 
 		specialButtonPanel.removeAll();

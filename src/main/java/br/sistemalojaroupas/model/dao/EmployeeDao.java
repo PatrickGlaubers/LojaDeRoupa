@@ -10,7 +10,6 @@ import br.sistemalojaroupas.db.DBException;
 import br.sistemalojaroupas.model.entities.Employee;
 import br.sistemalojaroupas.model.entities.User;
 import java.util.List;
-import java.util.stream.Collectors;
 import org.dizitart.no2.FindOptions;
 import org.dizitart.no2.SortOrder;
 import org.dizitart.no2.exceptions.NitriteException;
