@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.sistemalojaroupas.model.entities;
 
 import java.io.Serializable;
@@ -15,10 +10,7 @@ import org.dizitart.no2.objects.Id;
 import org.dizitart.no2.objects.Index;
 import org.dizitart.no2.objects.Indices;
 
-/**
- *
- * @author silas
- */
+
 @Indices(
     @Index(value = "cpf", type = IndexType.Unique)
 )
@@ -188,7 +180,7 @@ public class Employee implements Serializable, TableContract {
         private Double salary;
         private Address address;
         private Office office;
-    
+        
         public EmployeeBuilder cpf(String cpf) {
             this.cpf = cpf;
             return this;

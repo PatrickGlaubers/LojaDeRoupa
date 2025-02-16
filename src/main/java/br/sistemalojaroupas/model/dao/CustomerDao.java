@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this tobjlate file, choose Tools | Tobjlates
- * and open the tobjlate in the editor.
- */
+
 package br.sistemalojaroupas.model.dao;
 
 import br.sistemalojaroupas.db.DB;
@@ -15,10 +11,7 @@ import org.dizitart.no2.exceptions.NitriteException;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
 
-/**
- *
- * @author vfdes
- */
+
 public class CustomerDao {
 
     private static ObjectRepository<Customer> repCustomer;

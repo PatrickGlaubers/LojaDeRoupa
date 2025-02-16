@@ -16,13 +16,7 @@ import javax.swing.UIManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-/**
- * JSpinnerDateEditor is a date editor based on a JSpinner.
- * 
- * @author Kai Toedter
- * @version $LastChangedRevision: 147 $
- * @version $LastChangedDate: 2011-06-06 20:36:53 +0200 (Mo, 06 Jun 2011) $
- */
+
 public class JSpinnerDateEditor extends JSpinner implements IDateEditor,
 		FocusListener, ChangeListener {
 
@@ -114,11 +108,7 @@ public class JSpinnerDateEditor extends JSpinner implements IDateEditor,
 		setDateFormatString(dateFormatter.toPattern());
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.awt.event.FocusListener#focusLost(java.awt.event.FocusEvent)
-	 */
+	
 	public void focusLost(FocusEvent focusEvent) {
 		String text = ((JSpinner.DateEditor) getEditor()).getTextField()
 				.getText();
@@ -127,19 +117,11 @@ public class JSpinnerDateEditor extends JSpinner implements IDateEditor,
 		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.awt.event.FocusListener#focusGained(java.awt.event.FocusEvent)
-	 */
+	
 	public void focusGained(FocusEvent e) {
 	}
 
-	/**
-	 * Enables and disabled the compoment. It also fixes the background bug
-	 * 4991597 and sets the background explicitely to a
-	 * TextField.inactiveBackground.
-	 */
+	
 	public void setEnabled(boolean b) {
 		super.setEnabled(b);
 		if (!b) {
@@ -148,52 +130,39 @@ public class JSpinnerDateEditor extends JSpinner implements IDateEditor,
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see com.toedter.calendar.IDateEditor#getMaxSelectableDate()
-	 */
+	
 	public Date getMaxSelectableDate() {
 		return (Date) ((SpinnerDateModel) getModel()).getEnd();
 	}
 
-	/**
-	 * @see com.toedter.calendar.IDateEditor#getMinSelectableDate()
-	 */
+	
 	public Date getMinSelectableDate() {
 		return (Date) ((SpinnerDateModel) getModel()).getStart();
 	}
 
-	/**
-	 * @see com.toedter.calendar.IDateEditor#setMaxSelectableDate(java.util.Date)
-	 */
+	
 	public void setMaxSelectableDate(Date max) {
 		((SpinnerDateModel) getModel()).setEnd(max);
 	}
 
-	/**
-	 * @see com.toedter.calendar.IDateEditor#setMinSelectableDate(java.util.Date)
-	 */
+	
 	public void setMinSelectableDate(Date min) {
 		((SpinnerDateModel) getModel()).setStart(min);
 	}
 
-	/**
-	 * @see com.toedter.calendar.IDateEditor#setSelectableDateRange(java.util.Date, java.util.Date)
-	 */
+	
 	public void setSelectableDateRange(Date min, Date max) {
 		setMaxSelectableDate(max);
 		setMinSelectableDate(min);
 	}
 
-	/**
-	 * @see javax.swing.event.ChangeListener#stateChanged(javax.swing.event.ChangeEvent)
-	 */
+	
 	public void stateChanged(ChangeEvent e) {
 		setDate(((SpinnerDateModel) getModel()).getDate(), false);
 	}
 
     @Override
     public void setNormalColor(Color color) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        throw new UnsupportedOperationException("Not supported yet.");     }
 
 }

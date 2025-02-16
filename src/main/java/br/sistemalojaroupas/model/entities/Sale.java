@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.sistemalojaroupas.model.entities;
 
 import java.io.Serializable;
@@ -13,10 +9,7 @@ import java.util.Objects;
 import java.util.Set;
 import org.dizitart.no2.objects.Id;
 
-/**
- *
- * @author silas
- */
+
 public class Sale implements Serializable, TableContract {
     private final static long serialVersionUID = 1L;
     
@@ -137,17 +130,7 @@ public class Sale implements Serializable, TableContract {
         return payment;
     }
 
-    /**
-     * Método de pagamento como um int.
-     * <p>É recomendado usar: 
-     * <p>Sale.MONEY
-     * <p>Sale.CREDIT
-     * <p>Sale.DEBIT
-     * <p>Sale.MONEY_CREDIT
-     * 
-     * @param payment não pode ser nulo
-     * @param installments pode ser nulo
-     */
+    
     public void setPayment(int payment) {
         if (payment > 4 || payment < 1) {
             throw new IllegalArgumentException("Opção inválida");

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.sistemalojaroupas.model.services;
 
 import br.sistemalojaroupas.model.dao.ProductDao;
@@ -14,10 +10,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- *
- * @author silas
- */
+
 public class SaleService {
     
     public static void confirmSale(Sale sale) {

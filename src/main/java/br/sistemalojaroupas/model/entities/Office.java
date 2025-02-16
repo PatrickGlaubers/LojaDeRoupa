@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.sistemalojaroupas.model.entities;
 
 import java.util.HashMap;
@@ -14,10 +10,7 @@ import org.dizitart.no2.objects.Id;
 import org.dizitart.no2.objects.Index;
 import org.dizitart.no2.objects.Indices;
 
-/**
- *
- * @author silas
- */
+
 @Indices(
         @Index(value = "name", type = IndexType.Unique)
 )

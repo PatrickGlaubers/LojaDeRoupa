@@ -1,19 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.sistemalojaroupas.model.entities.util;
 
 import java.io.Serializable;
 import java.util.Objects;
 import org.dizitart.no2.objects.Id;
 
-/**
- *
- * @author silas
- * @param <T>
- */
+
 
 public class CodeGenerator implements Serializable {
     private final static long serialVersionUID = 1L;

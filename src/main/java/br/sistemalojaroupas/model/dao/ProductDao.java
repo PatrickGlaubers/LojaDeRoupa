@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.sistemalojaroupas.model.dao;
 
 import br.sistemalojaroupas.db.DB;
@@ -14,10 +10,7 @@ import org.dizitart.no2.SortOrder;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
 
-/**
- *
- * @author silas
- */
+
 public class ProductDao {
     
     private static ObjectRepository<Product> repProduct;

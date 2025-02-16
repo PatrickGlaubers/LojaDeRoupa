@@ -42,10 +42,7 @@ import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author lukas
- */
+
 public class Home extends javax.swing.JFrame implements DataChangeListener {
 
     private Boolean isMenuHided = true;
@@ -69,8 +66,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
         panelsCardLayout = (CardLayout) CollectionCard.getLayout();
 
-        //adicionando todos os panels que funcionam como botões no menu principal
-        menuButtonsList.add(menu_home);
+                menuButtonsList.add(menu_home);
         menuButtonsList.add(menu_customers);
         menuButtonsList.add(menu_sale);
         menuButtonsList.add(menu_settings);
@@ -83,8 +79,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
     }
     
     private boolean hasPermission(String key) {
-        // TODO Condicional apenas para testes na Home, não estará na versão final
-        if (Login.getLoggedUser() == null) {
+                if (Login.getLoggedUser() == null) {
             return true;
         }
         else {
@@ -143,8 +138,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+        private void initComponents() {
 
         popupProductsTable = new javax.swing.JPopupMenu();
         btnAddProduct = new javax.swing.JMenuItem();
@@ -316,8 +310,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         btnChangePassword = new javax.swing.JLabel();
         btnExitSystem = new javax.swing.JLabel();
 
-        btnAddProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_mais_claro.png"))); // NOI18N
-        btnAddProduct.setText("Adicionar");
+        btnAddProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_mais_claro.png")));         btnAddProduct.setText("Adicionar");
         btnAddProduct.setToolTipText("");
         btnAddProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -370,8 +363,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnl_Max.setPreferredSize(new java.awt.Dimension(50, 50));
 
         btn_Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_Max.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_maximizar.png"))); // NOI18N
-        btn_Max.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_Max.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_maximizar.png")));         btn_Max.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_MaxMouseClicked(evt);
             }
@@ -406,8 +398,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnl_Close.setPreferredSize(new java.awt.Dimension(50, 50));
 
         btn_Close.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_Close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_fechar.png"))); // NOI18N
-        btn_Close.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_Close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_fechar.png")));         btn_Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_CloseMouseClicked(evt);
             }
@@ -442,8 +433,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnl_Min.setPreferredSize(new java.awt.Dimension(50, 50));
 
         btn_Min.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_Min.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_mimizar.png"))); // NOI18N
-        btn_Min.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_Min.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_mimizar.png")));         btn_Min.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_MinMouseClicked(evt);
             }
@@ -477,8 +467,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnl_HeaderMenu.setBackground(new java.awt.Color(108, 81, 233));
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_unisales.png"))); // NOI18N
-
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_unisales.png"))); 
         jLabel14.setText("Backoffice");
 
         javax.swing.GroupLayout pnl_HeaderMenuLayout = new javax.swing.GroupLayout(pnl_HeaderMenu);
@@ -508,8 +497,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnl_IconMenu.setPreferredSize(new java.awt.Dimension(50, 50));
 
         btn_ShowHideMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_ShowHideMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_menu.png"))); // NOI18N
-        btn_ShowHideMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_ShowHideMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_menu.png")));         btn_ShowHideMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_ShowHideMenuMouseClicked(evt);
             }
@@ -551,15 +539,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         menu_home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_home.setBackground(new java.awt.Color(255, 255, 255));
-        btn_home.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_home.setForeground(new java.awt.Color(255, 255, 255));
+        btn_home.setFont(new java.awt.Font("Tahoma", 0, 14));         btn_home.setForeground(new java.awt.Color(255, 255, 255));
         btn_home.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_home.setText("Início");
         menu_home.add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 150, 50));
 
         icon_home.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_home.png"))); // NOI18N
-        icon_home.setMaximumSize(new java.awt.Dimension(70, 50));
+        icon_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_home.png")));         icon_home.setMaximumSize(new java.awt.Dimension(70, 50));
         icon_home.setMinimumSize(new java.awt.Dimension(70, 50));
         icon_home.setPreferredSize(new java.awt.Dimension(70, 50));
         menu_home.add(icon_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -574,15 +560,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         menu_sale.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_sales.setBackground(new java.awt.Color(255, 255, 255));
-        btn_sales.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_sales.setForeground(new java.awt.Color(255, 255, 255));
+        btn_sales.setFont(new java.awt.Font("Tahoma", 0, 14));         btn_sales.setForeground(new java.awt.Color(255, 255, 255));
         btn_sales.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_sales.setText("Vendas");
         menu_sale.add(btn_sales, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 150, 50));
 
         icon_sales.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon_sales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_money.png"))); // NOI18N
-        icon_sales.setMaximumSize(new java.awt.Dimension(70, 50));
+        icon_sales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_money.png")));         icon_sales.setMaximumSize(new java.awt.Dimension(70, 50));
         icon_sales.setMinimumSize(new java.awt.Dimension(70, 50));
         icon_sales.setPreferredSize(new java.awt.Dimension(70, 50));
         menu_sale.add(icon_sales, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -597,15 +581,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         menu_product.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_products.setBackground(new java.awt.Color(255, 255, 255));
-        btn_products.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_products.setForeground(new java.awt.Color(255, 255, 255));
+        btn_products.setFont(new java.awt.Font("Tahoma", 0, 14));         btn_products.setForeground(new java.awt.Color(255, 255, 255));
         btn_products.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_products.setText("Produtos");
         menu_product.add(btn_products, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 150, 50));
 
         icon_products.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon_products.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_clothes.png"))); // NOI18N
-        icon_products.setMaximumSize(new java.awt.Dimension(70, 50));
+        icon_products.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_clothes.png")));         icon_products.setMaximumSize(new java.awt.Dimension(70, 50));
         icon_products.setMinimumSize(new java.awt.Dimension(70, 50));
         icon_products.setPreferredSize(new java.awt.Dimension(70, 50));
         menu_product.add(icon_products, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -620,15 +602,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         menu_employees.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_employees.setBackground(new java.awt.Color(255, 255, 255));
-        btn_employees.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_employees.setForeground(new java.awt.Color(255, 255, 255));
+        btn_employees.setFont(new java.awt.Font("Tahoma", 0, 14));         btn_employees.setForeground(new java.awt.Color(255, 255, 255));
         btn_employees.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_employees.setText("Funcionários");
         menu_employees.add(btn_employees, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 150, 50));
 
         icon_employees.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon_employees.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_users.png"))); // NOI18N
-        icon_employees.setMaximumSize(new java.awt.Dimension(70, 50));
+        icon_employees.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_users.png")));         icon_employees.setMaximumSize(new java.awt.Dimension(70, 50));
         icon_employees.setMinimumSize(new java.awt.Dimension(70, 50));
         icon_employees.setPreferredSize(new java.awt.Dimension(70, 50));
         menu_employees.add(icon_employees, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -643,15 +623,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         menu_customers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_customers.setBackground(new java.awt.Color(255, 255, 255));
-        btn_customers.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_customers.setForeground(new java.awt.Color(255, 255, 255));
+        btn_customers.setFont(new java.awt.Font("Tahoma", 0, 14));         btn_customers.setForeground(new java.awt.Color(255, 255, 255));
         btn_customers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_customers.setText("Clientes");
         menu_customers.add(btn_customers, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 150, 50));
 
         icon_customers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon_customers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_customers.png"))); // NOI18N
-        icon_customers.setMaximumSize(new java.awt.Dimension(70, 50));
+        icon_customers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_customers.png")));         icon_customers.setMaximumSize(new java.awt.Dimension(70, 50));
         icon_customers.setMinimumSize(new java.awt.Dimension(70, 50));
         icon_customers.setPreferredSize(new java.awt.Dimension(70, 50));
         menu_customers.add(icon_customers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -666,15 +644,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         menu_settings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_settings.setBackground(new java.awt.Color(255, 255, 255));
-        btn_settings.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_settings.setForeground(new java.awt.Color(255, 255, 255));
+        btn_settings.setFont(new java.awt.Font("Tahoma", 0, 14));         btn_settings.setForeground(new java.awt.Color(255, 255, 255));
         btn_settings.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btn_settings.setText("Configurações");
         menu_settings.add(btn_settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 150, 50));
 
         icon_settings.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon_settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_settings.png"))); // NOI18N
-        icon_settings.setMaximumSize(new java.awt.Dimension(70, 50));
+        icon_settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_settings.png")));         icon_settings.setMaximumSize(new java.awt.Dimension(70, 50));
         icon_settings.setMinimumSize(new java.awt.Dimension(70, 50));
         icon_settings.setPreferredSize(new java.awt.Dimension(70, 50));
         menu_settings.add(icon_settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -721,15 +697,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Home.setBackground(new java.awt.Color(255, 255, 255));
         Card_Home.setPreferredSize(new java.awt.Dimension(1110, 583));
 
-        iconeOcultar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_olhoFechar.png"))); // NOI18N
-        iconeOcultar1.addMouseListener(new java.awt.event.MouseAdapter() {
+        iconeOcultar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_olhoFechar.png")));         iconeOcultar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 iconeOcultar1MouseClicked(evt);
             }
         });
 
-        txtBemVindo1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        txtBemVindo1.setForeground(new java.awt.Color(29, 73, 153));
+        txtBemVindo1.setFont(new java.awt.Font("Tahoma", 1, 20));         txtBemVindo1.setForeground(new java.awt.Color(29, 73, 153));
         txtBemVindo1.setText("  Olá, bem-vindo!");
         txtBemVindo1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 4, 0, 0, new java.awt.Color(0, 0, 51)));
 
@@ -741,23 +715,19 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnFaturamento.setOpaque(false);
         pnFaturamento.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtFaturamento.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        txtFaturamento.setForeground(new java.awt.Color(255, 255, 255));
+        txtFaturamento.setFont(new java.awt.Font("Tahoma", 1, 13));         txtFaturamento.setForeground(new java.awt.Color(255, 255, 255));
         txtFaturamento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtFaturamento.setText("Faturamento");
         pnFaturamento.add(txtFaturamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 110, 20));
 
-        txtFaturamentoValor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        txtFaturamentoValor.setForeground(new java.awt.Color(255, 255, 255));
+        txtFaturamentoValor.setFont(new java.awt.Font("Tahoma", 1, 16));         txtFaturamentoValor.setForeground(new java.awt.Color(255, 255, 255));
         txtFaturamentoValor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtFaturamentoValor.setText("R$ 39.482,49");
         pnFaturamento.add(txtFaturamentoValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
 
-        iconFaturamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_dinheiro.png"))); // NOI18N
-        pnFaturamento.add(iconFaturamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        iconFaturamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_dinheiro.png")));         pnFaturamento.add(iconFaturamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        fundoFaturamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo1_home.png"))); // NOI18N
-        pnFaturamento.add(fundoFaturamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        fundoFaturamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo1_home.png")));         pnFaturamento.add(fundoFaturamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         panelInformacoes1.add(pnFaturamento);
 
@@ -765,23 +735,19 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnReceita.setOpaque(false);
         pnReceita.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtReceita.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        txtReceita.setForeground(new java.awt.Color(255, 255, 255));
+        txtReceita.setFont(new java.awt.Font("Tahoma", 1, 13));         txtReceita.setForeground(new java.awt.Color(255, 255, 255));
         txtReceita.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtReceita.setText("Receita líquida");
         pnReceita.add(txtReceita, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 110, 20));
 
-        txtReceitaValor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        txtReceitaValor.setForeground(new java.awt.Color(255, 255, 255));
+        txtReceitaValor.setFont(new java.awt.Font("Tahoma", 1, 16));         txtReceitaValor.setForeground(new java.awt.Color(255, 255, 255));
         txtReceitaValor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtReceitaValor.setText("R$ 3.482,49");
         pnReceita.add(txtReceitaValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 110, -1));
 
-        iconReceita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_cifrão.png"))); // NOI18N
-        pnReceita.add(iconReceita, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        iconReceita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_cifrão.png")));         pnReceita.add(iconReceita, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        fundoReceita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo2_home.png"))); // NOI18N
-        pnReceita.add(fundoReceita, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        fundoReceita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo2_home.png")));         pnReceita.add(fundoReceita, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         panelInformacoes1.add(pnReceita);
 
@@ -789,23 +755,19 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnVendas.setOpaque(false);
         pnVendas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtVendas.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        txtVendas.setForeground(new java.awt.Color(255, 255, 255));
+        txtVendas.setFont(new java.awt.Font("Tahoma", 1, 13));         txtVendas.setForeground(new java.awt.Color(255, 255, 255));
         txtVendas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtVendas.setText("Total de vendas");
         pnVendas.add(txtVendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, 20));
 
-        txtTotalSales.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        txtTotalSales.setForeground(new java.awt.Color(255, 255, 255));
+        txtTotalSales.setFont(new java.awt.Font("Tahoma", 1, 16));         txtTotalSales.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalSales.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalSales.setText("986");
         pnVendas.add(txtTotalSales, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 10, 100, -1));
 
-        iconVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_carrinhoDeCompras.png"))); // NOI18N
-        pnVendas.add(iconVendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        iconVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_carrinhoDeCompras.png")));         pnVendas.add(iconVendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        fundoVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo3_home.png"))); // NOI18N
-        pnVendas.add(fundoVendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        fundoVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo3_home.png")));         pnVendas.add(fundoVendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         panelInformacoes1.add(pnVendas);
 
@@ -813,23 +775,19 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         pnTicket.setOpaque(false);
         pnTicket.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtTicket.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        txtTicket.setForeground(new java.awt.Color(255, 255, 255));
+        txtTicket.setFont(new java.awt.Font("Tahoma", 1, 13));         txtTicket.setForeground(new java.awt.Color(255, 255, 255));
         txtTicket.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTicket.setText("Ticket médio");
         pnTicket.add(txtTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 110, 20));
 
-        txtTicketValor.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        txtTicketValor.setForeground(new java.awt.Color(255, 255, 255));
+        txtTicketValor.setFont(new java.awt.Font("Tahoma", 1, 16));         txtTicketValor.setForeground(new java.awt.Color(255, 255, 255));
         txtTicketValor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTicketValor.setText("R$ 482,50");
         pnTicket.add(txtTicketValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 100, -1));
 
-        iconTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_ticket.png"))); // NOI18N
-        pnTicket.add(iconTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, -1));
+        iconTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_ticket.png")));         pnTicket.add(iconTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, -1));
 
-        fundoTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo4_home.png"))); // NOI18N
-        pnTicket.add(fundoTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        fundoTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo4_home.png")));         pnTicket.add(fundoTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         panelInformacoes1.add(pnTicket);
 
@@ -844,8 +802,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 50));
 
         novaVenda2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        novaVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novaVenda.png"))); // NOI18N
-        novaVenda2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        novaVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novaVenda.png")));         novaVenda2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         novaVenda2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 novaVenda2MouseClicked(evt);
@@ -863,8 +820,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         jSeparator15.setPreferredSize(new java.awt.Dimension(3, 180));
         jPanel6.add(jSeparator15);
 
-        novoProduto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoProduto.png"))); // NOI18N
-        novoProduto2.addMouseListener(new java.awt.event.MouseAdapter() {
+        novoProduto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoProduto.png")));         novoProduto2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 novoProduto2MouseClicked(evt);
             }
@@ -881,8 +837,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         jSeparator16.setPreferredSize(new java.awt.Dimension(3, 180));
         jPanel6.add(jSeparator16);
 
-        novoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoCliente.png"))); // NOI18N
-        novoCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+        novoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoCliente.png")));         novoCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 novoCliente2MouseClicked(evt);
             }
@@ -899,8 +854,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         jSeparator17.setPreferredSize(new java.awt.Dimension(3, 180));
         jPanel6.add(jSeparator17);
 
-        buscarCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarCliente.png"))); // NOI18N
-        buscarCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+        buscarCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarCliente.png")));         buscarCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buscarCliente2MouseClicked(evt);
             }
@@ -917,8 +871,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         jSeparator18.setPreferredSize(new java.awt.Dimension(3, 180));
         jPanel6.add(jSeparator18);
 
-        buscarVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarVenda.png"))); // NOI18N
-        buscarVenda2.addMouseListener(new java.awt.event.MouseAdapter() {
+        buscarVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarVenda.png")));         buscarVenda2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buscarVenda2MouseClicked(evt);
             }
@@ -933,8 +886,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
         bgButtonsHome.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1050, 280));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo_botoes_home.png"))); // NOI18N
-        bgButtonsHome.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fundo_botoes_home.png")));         bgButtonsHome.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout Card_HomeLayout = new javax.swing.GroupLayout(Card_Home);
         Card_Home.setLayout(Card_HomeLayout);
@@ -975,14 +927,12 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Sales.setBackground(new java.awt.Color(255, 255, 255));
         Card_Sales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_FinalDate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lbl_FinalDate.setForeground(new java.awt.Color(102, 102, 102));
+        lbl_FinalDate.setFont(new java.awt.Font("Tahoma", 1, 12));         lbl_FinalDate.setForeground(new java.awt.Color(102, 102, 102));
         lbl_FinalDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_FinalDate.setText("Data final :");
         Card_Sales.add(lbl_FinalDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 70, 80, 30));
 
-        lbl_InitialDate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lbl_InitialDate.setForeground(new java.awt.Color(102, 102, 102));
+        lbl_InitialDate.setFont(new java.awt.Font("Tahoma", 1, 12));         lbl_InitialDate.setForeground(new java.awt.Color(102, 102, 102));
         lbl_InitialDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_InitialDate.setText("Data inicial :");
         Card_Sales.add(lbl_InitialDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(737, 30, 80, 30));
@@ -998,8 +948,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Sales.add(dateStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 32, 120, 30));
 
         filter_btn_Cancel_Sale.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        filter_btn_Cancel_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png"))); // NOI18N
-        filter_btn_Cancel_Sale.addMouseListener(new java.awt.event.MouseAdapter() {
+        filter_btn_Cancel_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png")));         filter_btn_Cancel_Sale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 filter_btn_Cancel_SaleMouseClicked(evt);
             }
@@ -1013,8 +962,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Sales.add(filter_btn_Cancel_Sale, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 120, -1, 25));
 
         filter_btn_Apply_Sale.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        filter_btn_Apply_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png"))); // NOI18N
-        filter_btn_Apply_Sale.addMouseListener(new java.awt.event.MouseAdapter() {
+        filter_btn_Apply_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png")));         filter_btn_Apply_Sale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 filter_btn_Apply_SaleMouseClicked(evt);
             }
@@ -1028,8 +976,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Sales.add(filter_btn_Apply_Sale, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 120, -1, 25));
 
         btn_Filter_Sale.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_Filter_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_filtrar.png"))); // NOI18N
-        btn_Filter_Sale.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_Filter_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_filtrar.png")));         btn_Filter_Sale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_Filter_SaleMouseClicked(evt);
             }
@@ -1042,16 +989,14 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Sales.add(btn_Filter_Sale, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 30, -1, -1));
 
-        Filter_BackgroundSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background_FiltroAplicado.png"))); // NOI18N
-        Filter_BackgroundSale.addMouseListener(new java.awt.event.MouseAdapter() {
+        Filter_BackgroundSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background_FiltroAplicado.png")));         Filter_BackgroundSale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Filter_BackgroundSaleMouseClicked(evt);
             }
         });
         Card_Sales.add(Filter_BackgroundSale, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 20, -1, -1));
 
-        btn_NewSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png"))); // NOI18N
-        btn_NewSale.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_NewSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));         btn_NewSale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_NewSaleMouseClicked(evt);
             }
@@ -1064,8 +1009,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Sales.add(btn_NewSale, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 174, -1, -1));
 
-        btn_SearchSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png"))); // NOI18N
-        btn_SearchSale.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_SearchSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));         btn_SearchSale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_SearchSaleMouseClicked(evt);
             }
@@ -1079,8 +1023,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Sales.add(btn_SearchSale, new org.netbeans.lib.awtextra.AbsoluteConstraints(943, 174, -1, -1));
         Card_Sales.add(searchSale, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 174, 623, 30));
 
-        btn_DeleteSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png"))); // NOI18N
-        btn_DeleteSale.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_DeleteSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));         btn_DeleteSale.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_DeleteSaleMouseClicked(evt);
             }
@@ -1093,8 +1036,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Sales.add(btn_DeleteSale, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 174, -1, -1));
 
-        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 18));         jLabel32.setForeground(new java.awt.Color(0, 0, 51));
         jLabel32.setText(" Vendas");
         jLabel32.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 3, 0, 0, new java.awt.Color(108, 81, 233)));
         Card_Sales.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 19, 100, -1));
@@ -1162,8 +1104,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         filter_btn_Cancel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        filter_btn_Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png"))); // NOI18N
-        filter_btn_Cancel.addMouseListener(new java.awt.event.MouseAdapter() {
+        filter_btn_Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png")));         filter_btn_Cancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 filter_btn_CancelMouseClicked(evt);
             }
@@ -1177,8 +1118,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(filter_btn_Cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, -1, 25));
 
         filter_btn_Apply.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        filter_btn_Apply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png"))); // NOI18N
-        filter_btn_Apply.addMouseListener(new java.awt.event.MouseAdapter() {
+        filter_btn_Apply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png")));         filter_btn_Apply.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 filter_btn_ApplyMouseClicked(evt);
             }
@@ -1192,31 +1132,26 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(filter_btn_Apply, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 120, -1, 25));
 
         filter_cb_Color.setBackground(new java.awt.Color(204, 204, 204));
-        filter_cb_Color.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        filter_cb_Color.setForeground(new java.awt.Color(102, 102, 102));
+        filter_cb_Color.setFont(new java.awt.Font("Tahoma", 1, 10));         filter_cb_Color.setForeground(new java.awt.Color(102, 102, 102));
         filter_cb_Color.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cor..", "Item 1", "Item 2", "Item 3", "Item 4" }));
         Card_Products.add(filter_cb_Color, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 80, 100, -1));
 
         filter_cb_Size.setBackground(new java.awt.Color(204, 204, 204));
-        filter_cb_Size.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        filter_cb_Size.setForeground(new java.awt.Color(102, 102, 102));
+        filter_cb_Size.setFont(new java.awt.Font("Tahoma", 1, 10));         filter_cb_Size.setForeground(new java.awt.Color(102, 102, 102));
         filter_cb_Size.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tamanho...", "PP", "P", "M", "G", "GG", "XG", "XGG", "XGGG", "U", "1", "2", "3", "4", "5", "6", "7", "8", "10", "12", "14", "16", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60" }));
         Card_Products.add(filter_cb_Size, new org.netbeans.lib.awtextra.AbsoluteConstraints(738, 80, 100, -1));
 
         filter_cb_Brand.setBackground(new java.awt.Color(204, 204, 204));
-        filter_cb_Brand.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        filter_cb_Brand.setForeground(new java.awt.Color(102, 102, 102));
+        filter_cb_Brand.setFont(new java.awt.Font("Tahoma", 1, 10));         filter_cb_Brand.setForeground(new java.awt.Color(102, 102, 102));
         filter_cb_Brand.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Marca..", "Item 1", "Item 2", "Item 3", "Item 4" }));
         Card_Products.add(filter_cb_Brand, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 40, 100, -1));
 
         filter_cb_Category.setBackground(new java.awt.Color(204, 204, 204));
-        filter_cb_Category.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        filter_cb_Category.setForeground(new java.awt.Color(102, 102, 102));
+        filter_cb_Category.setFont(new java.awt.Font("Tahoma", 1, 10));         filter_cb_Category.setForeground(new java.awt.Color(102, 102, 102));
         filter_cb_Category.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Categoria..", "Item 1", "Item 2", "Item 3", "Item 4" }));
         Card_Products.add(filter_cb_Category, new org.netbeans.lib.awtextra.AbsoluteConstraints(738, 40, 100, -1));
 
-        Filter_Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background_FiltroAplicado.png"))); // NOI18N
-        Filter_Background.addMouseListener(new java.awt.event.MouseAdapter() {
+        Filter_Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background_FiltroAplicado.png")));         Filter_Background.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Filter_BackgroundMouseClicked(evt);
             }
@@ -1224,8 +1159,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(Filter_Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 20, -1, -1));
 
         btn_editProduct.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_editProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png"))); // NOI18N
-        btn_editProduct.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_editProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));         btn_editProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_editProductMouseClicked(evt);
             }
@@ -1239,8 +1173,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(btn_editProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 174, -1, -1));
 
         btn_removeProduct.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_removeProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png"))); // NOI18N
-        btn_removeProduct.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_removeProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));         btn_removeProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_removeProductMouseClicked(evt);
             }
@@ -1254,8 +1187,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(btn_removeProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 174, -1, -1));
 
         btn_addProduct.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_addProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png"))); // NOI18N
-        btn_addProduct.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_addProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));         btn_addProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_addProductMouseClicked(evt);
             }
@@ -1268,16 +1200,14 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Products.add(btn_addProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 174, -1, -1));
 
-        txtProductsSearchField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        txtProductsSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtProductsSearchField.setFont(new java.awt.Font("Tahoma", 0, 12));         txtProductsSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtProductsSearchFieldKeyPressed(evt);
             }
         });
         Card_Products.add(txtProductsSearchField, new org.netbeans.lib.awtextra.AbsoluteConstraints(418, 174, 540, 30));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18));         jLabel1.setForeground(new java.awt.Color(0, 0, 51));
         jLabel1.setText(" Produtos");
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 3, 0, 0, new java.awt.Color(108, 81, 233)));
         Card_Products.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 19, 100, -1));
@@ -1373,8 +1303,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 214, 983, 338));
 
         btn_Filter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_Filter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_filtrar.png"))); // NOI18N
-        btn_Filter.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_Filter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_filtrar.png")));         btn_Filter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_FilterMouseClicked(evt);
             }
@@ -1388,8 +1317,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Products.add(btn_Filter, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 30, -1, -1));
 
         btn_SearchProducts.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btn_SearchProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png"))); // NOI18N
-        btn_SearchProducts.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_SearchProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));         btn_SearchProducts.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_SearchProductsMouseClicked(evt);
             }
@@ -1408,8 +1336,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Employees.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnNewEmployee.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnNewEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png"))); // NOI18N
-        btnNewEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnNewEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));         btnNewEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnNewEmployeeMouseClicked(evt);
             }
@@ -1423,8 +1350,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Employees.add(btnNewEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, 38));
 
         btnEditEmployee.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnEditEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png"))); // NOI18N
-        btnEditEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEditEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));         btnEditEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnEditEmployeeMouseClicked(evt);
             }
@@ -1438,8 +1364,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Employees.add(btnEditEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, 38));
 
         btnDeleteEmployee.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnDeleteEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png"))); // NOI18N
-        btnDeleteEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDeleteEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));         btnDeleteEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnDeleteEmployeeMouseClicked(evt);
             }
@@ -1452,15 +1377,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Employees.add(btnDeleteEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, -1, 38));
 
-        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 18));         jLabel34.setForeground(new java.awt.Color(0, 0, 51));
         jLabel34.setText(" Funcionários");
         jLabel34.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 3, 0, 0, new java.awt.Color(108, 81, 233)));
         Card_Employees.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 130, -1));
         Card_Employees.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 1060, 10));
 
-        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(108, 81, 233));
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 18));         jLabel37.setForeground(new java.awt.Color(108, 81, 233));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("FUNCIONÁRIOS");
         Card_Employees.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 150, 47));
@@ -1514,148 +1437,122 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Panel_Employees.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Employees.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Name.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Name.setForeground(new java.awt.Color(255, 255, 255));
+        Name.setFont(new java.awt.Font("Segoe UI", 0, 14));         Name.setForeground(new java.awt.Color(255, 255, 255));
         Name.setText("NOME");
         Panel_Employees.add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, 30));
 
         txtEmployeeName.setEditable(false);
         txtEmployeeName.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtEmployeeName.addActionListener(new java.awt.event.ActionListener() {
+        txtEmployeeName.setFont(new java.awt.Font("Segoe UI", 0, 14));         txtEmployeeName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmployeeNameActionPerformed(evt);
             }
         });
         Panel_Employees.add(txtEmployeeName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 540, 30));
 
-        BirthDate.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        BirthDate.setForeground(new java.awt.Color(255, 255, 255));
+        BirthDate.setFont(new java.awt.Font("Segoe UI", 0, 14));         BirthDate.setForeground(new java.awt.Color(255, 255, 255));
         BirthDate.setText("DATA NASC.");
         Panel_Employees.add(BirthDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 30));
 
-        Address.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Address.setForeground(new java.awt.Color(255, 255, 255));
+        Address.setFont(new java.awt.Font("Segoe UI", 0, 14));         Address.setForeground(new java.awt.Color(255, 255, 255));
         Address.setText("LOGRADOURO");
         Panel_Employees.add(Address, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
-        Job.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Job.setForeground(new java.awt.Color(255, 255, 255));
+        Job.setFont(new java.awt.Font("Segoe UI", 0, 14));         Job.setForeground(new java.awt.Color(255, 255, 255));
         Job.setText("CARGO");
         Panel_Employees.add(Job, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 53, -1, -1));
 
-        CPF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        CPF.setForeground(new java.awt.Color(255, 255, 255));
+        CPF.setFont(new java.awt.Font("Segoe UI", 0, 14));         CPF.setForeground(new java.awt.Color(255, 255, 255));
         CPF.setText("CPF");
         Panel_Employees.add(CPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 53, -1, -1));
 
-        Neighbourhood.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Neighbourhood.setForeground(new java.awt.Color(255, 255, 255));
+        Neighbourhood.setFont(new java.awt.Font("Segoe UI", 0, 14));         Neighbourhood.setForeground(new java.awt.Color(255, 255, 255));
         Neighbourhood.setText("BAIRRO");
         Panel_Employees.add(Neighbourhood, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, -1, 30));
 
         txtEmployeeBirthDate.setEditable(false);
         txtEmployeeBirthDate.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeBirthDate.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeBirthDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 94, 30));
+        txtEmployeeBirthDate.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeBirthDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 94, 30));
 
         txtEmployeeCPF.setEditable(false);
         txtEmployeeCPF.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeCPF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 50, 114, -1));
+        txtEmployeeCPF.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 50, 114, -1));
 
-        State.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        State.setForeground(new java.awt.Color(255, 255, 255));
+        State.setFont(new java.awt.Font("Segoe UI", 0, 14));         State.setForeground(new java.awt.Color(255, 255, 255));
         State.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         State.setText("UF");
         Panel_Employees.add(State, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 24, -1));
 
-        CEP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        CEP.setForeground(new java.awt.Color(255, 255, 255));
+        CEP.setFont(new java.awt.Font("Segoe UI", 0, 14));         CEP.setForeground(new java.awt.Color(255, 255, 255));
         CEP.setText("CEP");
         Panel_Employees.add(CEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, 30));
 
         HouseNumber.setBackground(new java.awt.Color(255, 255, 255));
-        HouseNumber.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        HouseNumber.setForeground(new java.awt.Color(255, 255, 255));
+        HouseNumber.setFont(new java.awt.Font("Segoe UI", 0, 14));         HouseNumber.setForeground(new java.awt.Color(255, 255, 255));
         HouseNumber.setText("Nº");
         Panel_Employees.add(HouseNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, -1, -1));
 
         txtEmployeeCEP01.setEditable(false);
         txtEmployeeCEP01.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeCEP01.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeCEP01, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 60, 30));
+        txtEmployeeCEP01.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeCEP01, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 60, 30));
 
         txtEmployeeCEP02.setEditable(false);
         txtEmployeeCEP02.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeCEP02.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeCEP02, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 40, 30));
+        txtEmployeeCEP02.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeCEP02, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 40, 30));
 
-        CPFSeparator.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        CPFSeparator.setForeground(new java.awt.Color(255, 255, 255));
+        CPFSeparator.setFont(new java.awt.Font("Segoe UI", 0, 14));         CPFSeparator.setForeground(new java.awt.Color(255, 255, 255));
         CPFSeparator.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CPFSeparator.setText("-");
         Panel_Employees.add(CPFSeparator, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 20, 30));
 
         txtEmployeeAddress.setEditable(false);
         txtEmployeeAddress.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeAddress.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 430, 30));
+        txtEmployeeAddress.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 430, 30));
 
-        City.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        City.setForeground(new java.awt.Color(255, 255, 255));
+        City.setFont(new java.awt.Font("Segoe UI", 0, 14));         City.setForeground(new java.awt.Color(255, 255, 255));
         City.setText("CIDADE");
         Panel_Employees.add(City, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
 
         txtEmployeeCity.setEditable(false);
         txtEmployeeCity.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeCity.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 180, -1));
+        txtEmployeeCity.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 180, -1));
 
         txtEmployeeState.setEditable(false);
         txtEmployeeState.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeState.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeState, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 30, -1));
+        txtEmployeeState.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeState, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 30, -1));
 
         txtEmployeeAddressNum.setEditable(false);
         txtEmployeeAddressNum.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeAddressNum.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeAddressNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 60, -1));
+        txtEmployeeAddressNum.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeAddressNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 60, -1));
 
-        Phone.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Phone.setForeground(new java.awt.Color(255, 255, 255));
+        Phone.setFont(new java.awt.Font("Segoe UI", 0, 14));         Phone.setForeground(new java.awt.Color(255, 255, 255));
         Phone.setText("CELULAR");
         Panel_Employees.add(Phone, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 30));
 
         txtEmployeeJob.setEditable(false);
         txtEmployeeJob.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeJob.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeJob, new org.netbeans.lib.awtextra.AbsoluteConstraints(442, 50, 210, -1));
+        txtEmployeeJob.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeJob, new org.netbeans.lib.awtextra.AbsoluteConstraints(442, 50, 210, -1));
 
         txtEmployeePhone.setEditable(false);
         txtEmployeePhone.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeePhone.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtEmployeePhone.addActionListener(new java.awt.event.ActionListener() {
+        txtEmployeePhone.setFont(new java.awt.Font("Segoe UI", 0, 14));         txtEmployeePhone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmployeePhoneActionPerformed(evt);
             }
         });
         Panel_Employees.add(txtEmployeePhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 120, 30));
 
-        Email.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Email.setForeground(new java.awt.Color(255, 255, 255));
+        Email.setFont(new java.awt.Font("Segoe UI", 0, 14));         Email.setForeground(new java.awt.Color(255, 255, 255));
         Email.setText("E-MAIL");
         Panel_Employees.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, 30));
 
         txtEmployeeEmail.setEditable(false);
         txtEmployeeEmail.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 103, 350, 30));
+        txtEmployeeEmail.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 103, 350, 30));
 
         txtEmployeeNeigh.setEditable(false);
         txtEmployeeNeigh.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmployeeNeigh.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Panel_Employees.add(txtEmployeeNeigh, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 270, -1));
+        txtEmployeeNeigh.setFont(new java.awt.Font("Segoe UI", 0, 14));         Panel_Employees.add(txtEmployeeNeigh, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 270, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1685,8 +1582,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Card_Customers.setBackground(new java.awt.Color(255, 255, 255));
         Card_Customers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnRemoveCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png"))); // NOI18N
-        btnRemoveCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRemoveCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));         btnRemoveCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnRemoveCustomerMouseClicked(evt);
             }
@@ -1699,8 +1595,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Customers.add(btnRemoveCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, 40));
 
-        btnSearchCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png"))); // NOI18N
-        btnSearchCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSearchCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));         btnSearchCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSearchCustomerMouseClicked(evt);
             }
@@ -1713,8 +1608,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Customers.add(btnSearchCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(941, 174, -1, -1));
 
-        btnNewCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png"))); // NOI18N
-        btnNewCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnNewCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));         btnNewCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnNewCustomerMouseClicked(evt);
             }
@@ -1734,8 +1628,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
         Card_Customers.add(cSearchCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 174, 410, 30));
 
-        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 18));         jLabel33.setForeground(new java.awt.Color(0, 0, 51));
         jLabel33.setText(" Clientes");
         jLabel33.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 3, 0, 0, new java.awt.Color(108, 81, 233)));
         Card_Customers.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 19, 100, -1));
@@ -1782,8 +1675,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
         Card_Customers.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 214, 960, 350));
 
-        btnEditCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png"))); // NOI18N
-        btnEditCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEditCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));         btnEditCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnEditCustomerMouseClicked(evt);
             }
@@ -1800,18 +1692,15 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
         Card_Settings.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 18));         jLabel35.setForeground(new java.awt.Color(0, 0, 51));
         jLabel35.setText(" Configurações");
         jLabel35.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 3, 0, 0, new java.awt.Color(108, 81, 233)));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/avatar.png"))); // NOI18N
-
-        labelUserName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        labelUserName.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/avatar.png"))); 
+        labelUserName.setFont(new java.awt.Font("Segoe UI", 1, 12));         labelUserName.setForeground(new java.awt.Color(0, 0, 0));
         labelUserName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelUserName.setText("%NOME%");
 
@@ -1869,10 +1758,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
                 .addContainerGap(259, Short.MAX_VALUE))
         );
 
-        btnChangePassword.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        btnChangePassword.setForeground(new java.awt.Color(0, 0, 0));
-        btnChangePassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/synchronize (1).png"))); // NOI18N
-        btnChangePassword.setText("  Alterar senha");
+        btnChangePassword.setFont(new java.awt.Font("Calibri", 1, 18));         btnChangePassword.setForeground(new java.awt.Color(0, 0, 0));
+        btnChangePassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/synchronize (1).png")));         btnChangePassword.setText("  Alterar senha");
         btnChangePassword.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         btnChangePassword.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1880,10 +1767,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             }
         });
 
-        btnExitSystem.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        btnExitSystem.setForeground(new java.awt.Color(0, 0, 0));
-        btnExitSystem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit.png"))); // NOI18N
-        btnExitSystem.setText("        Sair do sistema");
+        btnExitSystem.setFont(new java.awt.Font("Calibri", 1, 18));         btnExitSystem.setForeground(new java.awt.Color(0, 0, 0));
+        btnExitSystem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit.png")));         btnExitSystem.setText("        Sair do sistema");
         btnExitSystem.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnExitSystemMouseClicked(evt);
@@ -1934,68 +1819,39 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
 
         setSize(new java.awt.Dimension(1311, 679));
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
-
-    private void btn_CloseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CloseMouseEntered
-        // color red
-        pnl_Close.setBackground(new java.awt.Color(232, 17, 35));
-    }//GEN-LAST:event_btn_CloseMouseEntered
-
-    private void btn_CloseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CloseMouseExited
-        // color original
-        resetDefaultColor(pnl_Close);
-    }//GEN-LAST:event_btn_CloseMouseExited
-
-    private void btn_CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CloseMouseClicked
-        // Close
-        int op;
+    }
+    private void btn_CloseMouseEntered(java.awt.event.MouseEvent evt) {                pnl_Close.setBackground(new java.awt.Color(232, 17, 35));
+    }
+    private void btn_CloseMouseExited(java.awt.event.MouseEvent evt) {                resetDefaultColor(pnl_Close);
+    }
+    private void btn_CloseMouseClicked(java.awt.event.MouseEvent evt) {                int op;
         op = JOptionPane.showConfirmDialog(null, "Tem certeza que deseja sair?", "Atenção", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
         if (op == 0) {
             DB.close();
             System.exit(0);
         }
-    }//GEN-LAST:event_btn_CloseMouseClicked
-
-    private void btn_MaxMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MaxMouseEntered
-        setDefaultColor(pnl_Max);
-    }//GEN-LAST:event_btn_MaxMouseEntered
-
-    private void btn_MaxMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MaxMouseExited
-        resetDefaultColor(pnl_Max);
-    }//GEN-LAST:event_btn_MaxMouseExited
-
-    private void btn_MaxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MaxMouseClicked
-        // Max
-        if (this.getExtendedState() != java.awt.Frame.MAXIMIZED_BOTH) {
+    }
+    private void btn_MaxMouseEntered(java.awt.event.MouseEvent evt) {        setDefaultColor(pnl_Max);
+    }
+    private void btn_MaxMouseExited(java.awt.event.MouseEvent evt) {        resetDefaultColor(pnl_Max);
+    }
+    private void btn_MaxMouseClicked(java.awt.event.MouseEvent evt) {                if (this.getExtendedState() != java.awt.Frame.MAXIMIZED_BOTH) {
             this.setExtendedState(java.awt.Frame.MAXIMIZED_BOTH);
         } else {
             this.setExtendedState(java.awt.Frame.NORMAL);
         }
-    }//GEN-LAST:event_btn_MaxMouseClicked
-
-    private void btn_MinMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MinMouseEntered
-        setDefaultColor(pnl_Min);
-    }//GEN-LAST:event_btn_MinMouseEntered
-
-    private void btn_MinMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MinMouseExited
-        resetDefaultColor(pnl_Min);
-    }//GEN-LAST:event_btn_MinMouseExited
-
-    private void btn_MinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MinMouseClicked
-        // Min
-        this.setExtendedState(java.awt.Frame.ICONIFIED);
-    }//GEN-LAST:event_btn_MinMouseClicked
-
-    private void btn_ShowHideMenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ShowHideMenuMouseEntered
-        setDefaultColor(pnl_IconMenu);
-    }//GEN-LAST:event_btn_ShowHideMenuMouseEntered
-
-    private void btn_ShowHideMenuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ShowHideMenuMouseExited
-        resetDefaultColor(pnl_IconMenu);
-    }//GEN-LAST:event_btn_ShowHideMenuMouseExited
-
-    private void btn_ShowHideMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ShowHideMenuMouseClicked
-        if (isMenuHided == true) {
+    }
+    private void btn_MinMouseEntered(java.awt.event.MouseEvent evt) {        setDefaultColor(pnl_Min);
+    }
+    private void btn_MinMouseExited(java.awt.event.MouseEvent evt) {        resetDefaultColor(pnl_Min);
+    }
+    private void btn_MinMouseClicked(java.awt.event.MouseEvent evt) {                this.setExtendedState(java.awt.Frame.ICONIFIED);
+    }
+    private void btn_ShowHideMenuMouseEntered(java.awt.event.MouseEvent evt) {        setDefaultColor(pnl_IconMenu);
+    }
+    private void btn_ShowHideMenuMouseExited(java.awt.event.MouseEvent evt) {        resetDefaultColor(pnl_IconMenu);
+    }
+    private void btn_ShowHideMenuMouseClicked(java.awt.event.MouseEvent evt) {        if (isMenuHided == true) {
             changePaneSize(pnl_HeaderMenu, new Dimension(70, pnl_HeaderMenu.getHeight()));
             changePaneSize(pnMenu, new Dimension(70, pnMenu.getHeight()));
             SwingUtilities.updateComponentTreeUI(this);
@@ -2007,10 +1863,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             isMenuHided = true;
         }
 
-    }//GEN-LAST:event_btn_ShowHideMenuMouseClicked
-
-    private void btn_addProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_addProductMouseClicked
-        if (!hasPermission("product")) {
+    }
+    private void btn_addProductMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("product")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2021,10 +1875,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         dialog.subscribeDataChangeListener(this);
         dialog.setVisible(true);
         Utils.updateTable(ProductDao.findAll(), table_Products);
-    }//GEN-LAST:event_btn_addProductMouseClicked
-
-    private void btn_removeProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_removeProductMouseClicked
-        if (!hasPermission("product")) {
+    }
+    private void btn_removeProductMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("product")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2042,10 +1894,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
                 Utils.updateTable(ProductDao.findAll(), table_Products);
             }
         }
-    }//GEN-LAST:event_btn_removeProductMouseClicked
-
-    private void btn_editProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_editProductMouseClicked
-        if (!hasPermission("product")) {
+    }
+    private void btn_editProductMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("product")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2066,20 +1916,16 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             JOptionPane.showMessageDialog(null, "Você deve selecionar um produto para poder editar.",
                     "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btn_editProductMouseClicked
-
-    private void btnNewEmployeeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewEmployeeMouseClicked
-        if (!hasPermission("employee")) {
+    }
+    private void btnNewEmployeeMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("employee")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
         new Register_And_Edit_Employee(this, true).setVisible(true);
         Utils.updateTable(EmployeeDao.findAll(), table_Employees);
         Utils.clearFields(Panel_Employees);
-    }//GEN-LAST:event_btnNewEmployeeMouseClicked
-
-    private void btnEditEmployeeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditEmployeeMouseClicked
-        if (!hasPermission("employee")) {
+    }
+    private void btnEditEmployeeMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("employee")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2100,10 +1946,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             JOptionPane.showMessageDialog(null, "Você deve selecionar um funcionário para poder editar.",
                     "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btnEditEmployeeMouseClicked
-
-    private void btnDeleteEmployeeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeMouseClicked
-        if (!hasPermission("employee")) {
+    }
+    private void btnDeleteEmployeeMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("employee")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2123,10 +1967,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             Utils.updateTable(EmployeeDao.findAll(), table_Employees);
             Utils.clearFields(Panel_Employees);
         }
-    }//GEN-LAST:event_btnDeleteEmployeeMouseClicked
-
-    private void btn_NewSaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NewSaleMouseClicked
-        if (hasPermission("sale")) {
+    }
+    private void btn_NewSaleMouseClicked(java.awt.event.MouseEvent evt) {        if (hasPermission("sale")) {
             New_Sale frame = new New_Sale();
             frame.subscribeDataChangeListener(this);
             frame.setVisible(true);
@@ -2134,14 +1976,9 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             JOptionPane.showMessageDialog(this, "Você não tem permissão para acessar esta função.",
                     "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btn_NewSaleMouseClicked
-
-    private void btn_SearchSaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SearchSaleMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_SearchSaleMouseClicked
-
-    private void btn_DeleteSaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_DeleteSaleMouseClicked
-        if (!hasPermission("sale")) {
+    }
+    private void btn_SearchSaleMouseClicked(java.awt.event.MouseEvent evt) {            }
+    private void btn_DeleteSaleMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("sale")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2162,10 +1999,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         else {
             JOptionPane.showMessageDialog(this, "Você deve selecionar uma venda para poder excluir.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btn_DeleteSaleMouseClicked
-
-    private void menu_saleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_saleMouseClicked
-        panelsCardLayout.show(CollectionCard, "cardSales");
+    }
+    private void menu_saleMouseClicked(java.awt.event.MouseEvent evt) {        panelsCardLayout.show(CollectionCard, "cardSales");
         setMenuButtonsColor(menu_sale);
 
         setVisibleTable(tableSales);
@@ -2174,18 +2009,14 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         Filter_BackgroundSale.setVisible(false); filter_btn_Cancel_Sale.setVisible(false); dateEnd.setVisible(false);
         dateStart.setVisible(false); lbl_FinalDate.setVisible(false); lbl_InitialDate.setVisible(false); filter_btn_Apply_Sale.setVisible(false);  
         
-    }//GEN-LAST:event_menu_saleMouseClicked
-
-    private void menu_homeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_homeMouseClicked
-        panelsCardLayout.show(CollectionCard, "cardHome");
+    }
+    private void menu_homeMouseClicked(java.awt.event.MouseEvent evt) {        panelsCardLayout.show(CollectionCard, "cardHome");
         setMenuButtonsColor(menu_home);
 
         setVisibleTable(null);
         refreshHomeData();
-    }//GEN-LAST:event_menu_homeMouseClicked
-
-    private void menu_productMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_productMouseClicked
-        panelsCardLayout.show(CollectionCard, "cardProducts");
+    }
+    private void menu_productMouseClicked(java.awt.event.MouseEvent evt) {        panelsCardLayout.show(CollectionCard, "cardProducts");
         setMenuButtonsColor(menu_product);
 
         setVisibleTable(table_Products);
@@ -2194,66 +2025,38 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         
         Filter_Background.setVisible(false); filter_btn_Cancel.setVisible(false); filter_cb_Category.setVisible(false);
         filter_cb_Color.setVisible(false); filter_cb_Brand.setVisible(false); filter_cb_Size.setVisible(false); filter_btn_Apply.setVisible(false);
-    }//GEN-LAST:event_menu_productMouseClicked
-
-    private void menu_employeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_employeesMouseClicked
-        panelsCardLayout.show(CollectionCard, "cardEmployees");
+    }
+    private void menu_employeesMouseClicked(java.awt.event.MouseEvent evt) {        panelsCardLayout.show(CollectionCard, "cardEmployees");
         setMenuButtonsColor(menu_employees);
 
         setVisibleTable(table_Employees);
         Utils.updateTable(EmployeeDao.findAll(), table_Employees);
-    }//GEN-LAST:event_menu_employeesMouseClicked
-
-    private void menu_customersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_customersMouseClicked
-        panelsCardLayout.show(CollectionCard, "cardCustomers");
+    }
+    private void menu_customersMouseClicked(java.awt.event.MouseEvent evt) {        panelsCardLayout.show(CollectionCard, "cardCustomers");
         setMenuButtonsColor(menu_customers);
 
         setVisibleTable(tableCustomers);
         Utils.updateTable(CustomerDao.findAll(), tableCustomers);
-    }//GEN-LAST:event_menu_customersMouseClicked
-
-    private void menu_settingsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_settingsMouseClicked
-        panelsCardLayout.show(CollectionCard, "cardSettings");
+    }
+    private void menu_settingsMouseClicked(java.awt.event.MouseEvent evt) {        panelsCardLayout.show(CollectionCard, "cardSettings");
         setMenuButtonsColor(menu_settings);
         labelUserName.setText(Login.getLoggedUser().getEmployeeName().toUpperCase());
-    }//GEN-LAST:event_menu_settingsMouseClicked
-
-    private void btn_addProductMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_addProductMouseEntered
-        // Trocar para o ícone escuro
-        btn_addProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
-    }//GEN-LAST:event_btn_addProductMouseEntered
-
-    private void btn_addProductMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_addProductMouseExited
-        // Voltar para o ícone original
-        btn_addProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
-    }//GEN-LAST:event_btn_addProductMouseExited
-
-    private void btn_editProductMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_editProductMouseEntered
-        // Trocar para o ícone escuro
-        btn_editProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_EditarEscuro.png")));
-    }//GEN-LAST:event_btn_editProductMouseEntered
-
-    private void btn_editProductMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_editProductMouseExited
-        // Voltar para o ícone original
-        btn_editProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));
-    }//GEN-LAST:event_btn_editProductMouseExited
-
-    private void btn_removeProductMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_removeProductMouseEntered
-        // Trocar para o ícone escuro
-        btn_removeProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
-    }//GEN-LAST:event_btn_removeProductMouseEntered
-
-    private void btn_removeProductMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_removeProductMouseExited
-        // Voltar para o ícone original
-        btn_removeProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
-    }//GEN-LAST:event_btn_removeProductMouseExited
-
-    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
-
-    }//GEN-LAST:event_formWindowClosed
-
-    private void btnRemoveCustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRemoveCustomerMouseClicked
-        if (!hasPermission("customer")) {
+    }
+    private void btn_addProductMouseEntered(java.awt.event.MouseEvent evt) {                btn_addProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
+    }
+    private void btn_addProductMouseExited(java.awt.event.MouseEvent evt) {                btn_addProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
+    }
+    private void btn_editProductMouseEntered(java.awt.event.MouseEvent evt) {                btn_editProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_EditarEscuro.png")));
+    }
+    private void btn_editProductMouseExited(java.awt.event.MouseEvent evt) {                btn_editProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));
+    }
+    private void btn_removeProductMouseEntered(java.awt.event.MouseEvent evt) {                btn_removeProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
+    }
+    private void btn_removeProductMouseExited(java.awt.event.MouseEvent evt) {                btn_removeProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
+    }
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {
+    }
+    private void btnRemoveCustomerMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("customer")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2273,143 +2076,79 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             }
         }
         
-    }//GEN-LAST:event_btnRemoveCustomerMouseClicked
-
-    private void btnNewCustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewCustomerMouseClicked
-        if (!hasPermission("customer")) {
+    }
+    private void btnNewCustomerMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("customer")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
         new Register_And_Edit_Customer(this, true).setVisible(true);
         Utils.updateTable(CustomerDao.findAll(), tableCustomers);
-    }//GEN-LAST:event_btnNewCustomerMouseClicked
-
-    private void txtProductsSearchFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtProductsSearchFieldKeyPressed
-        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+    }
+    private void txtProductsSearchFieldKeyPressed(java.awt.event.KeyEvent evt) {        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
             btn_SearchProductsMouseClicked(null);
         }
-    }//GEN-LAST:event_txtProductsSearchFieldKeyPressed
-
-    private void btn_NewSaleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NewSaleMouseEntered
-        btn_NewSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
-    }//GEN-LAST:event_btn_NewSaleMouseEntered
-
-    private void btn_NewSaleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NewSaleMouseExited
-        btn_NewSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
-    }//GEN-LAST:event_btn_NewSaleMouseExited
-
-    private void btn_DeleteSaleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_DeleteSaleMouseEntered
-        btn_DeleteSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
-    }//GEN-LAST:event_btn_DeleteSaleMouseEntered
-
-    private void btn_DeleteSaleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_DeleteSaleMouseExited
-        btn_DeleteSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
-    }//GEN-LAST:event_btn_DeleteSaleMouseExited
-
-    private void btn_SearchSaleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SearchSaleMouseEntered
-        btn_SearchSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisar.png")));
-    }//GEN-LAST:event_btn_SearchSaleMouseEntered
-
-    private void btn_SearchSaleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SearchSaleMouseExited
-        btn_SearchSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));
-    }//GEN-LAST:event_btn_SearchSaleMouseExited
-
-    private void btnNewEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewEmployeeMouseEntered
-        btnNewEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
-    }//GEN-LAST:event_btnNewEmployeeMouseEntered
-
-    private void btnNewEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewEmployeeMouseExited
-        btnNewEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
-    }//GEN-LAST:event_btnNewEmployeeMouseExited
-
-    private void btnEditEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditEmployeeMouseEntered
-        btnEditEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_EditarEscuro.png")));
-    }//GEN-LAST:event_btnEditEmployeeMouseEntered
-
-    private void btnEditEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditEmployeeMouseExited
-        btnEditEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));
-    }//GEN-LAST:event_btnEditEmployeeMouseExited
-
-    private void btnDeleteEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeMouseEntered
-        btnDeleteEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
-    }//GEN-LAST:event_btnDeleteEmployeeMouseEntered
-
-    private void btnDeleteEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteEmployeeMouseExited
-        btnDeleteEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
-    }//GEN-LAST:event_btnDeleteEmployeeMouseExited
-
-    private void btnNewCustomerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewCustomerMouseEntered
-        btnNewCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
-    }//GEN-LAST:event_btnNewCustomerMouseEntered
-
-    private void btnNewCustomerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewCustomerMouseExited
-        btnNewCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
-    }//GEN-LAST:event_btnNewCustomerMouseExited
-
-    private void btnRemoveCustomerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRemoveCustomerMouseEntered
-        btnRemoveCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
-    }//GEN-LAST:event_btnRemoveCustomerMouseEntered
-
-    private void btnRemoveCustomerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRemoveCustomerMouseExited
-        btnRemoveCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
-    }//GEN-LAST:event_btnRemoveCustomerMouseExited
-
-    private void btnSearchCustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSearchCustomerMouseClicked
-        String str = cSearchCustomer.getText();
+    }
+    private void btn_NewSaleMouseEntered(java.awt.event.MouseEvent evt) {        btn_NewSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
+    }
+    private void btn_NewSaleMouseExited(java.awt.event.MouseEvent evt) {        btn_NewSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
+    }
+    private void btn_DeleteSaleMouseEntered(java.awt.event.MouseEvent evt) {        btn_DeleteSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
+    }
+    private void btn_DeleteSaleMouseExited(java.awt.event.MouseEvent evt) {        btn_DeleteSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
+    }
+    private void btn_SearchSaleMouseEntered(java.awt.event.MouseEvent evt) {        btn_SearchSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisar.png")));
+    }
+    private void btn_SearchSaleMouseExited(java.awt.event.MouseEvent evt) {        btn_SearchSale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));
+    }
+    private void btnNewEmployeeMouseEntered(java.awt.event.MouseEvent evt) {        btnNewEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
+    }
+    private void btnNewEmployeeMouseExited(java.awt.event.MouseEvent evt) {        btnNewEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
+    }
+    private void btnEditEmployeeMouseEntered(java.awt.event.MouseEvent evt) {        btnEditEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_EditarEscuro.png")));
+    }
+    private void btnEditEmployeeMouseExited(java.awt.event.MouseEvent evt) {        btnEditEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));
+    }
+    private void btnDeleteEmployeeMouseEntered(java.awt.event.MouseEvent evt) {        btnDeleteEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
+    }
+    private void btnDeleteEmployeeMouseExited(java.awt.event.MouseEvent evt) {        btnDeleteEmployee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
+    }
+    private void btnNewCustomerMouseEntered(java.awt.event.MouseEvent evt) {        btnNewCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarEscuro.png")));
+    }
+    private void btnNewCustomerMouseExited(java.awt.event.MouseEvent evt) {        btnNewCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_adicionarClaro.png")));
+    }
+    private void btnRemoveCustomerMouseEntered(java.awt.event.MouseEvent evt) {        btnRemoveCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluir.png")));
+    }
+    private void btnRemoveCustomerMouseExited(java.awt.event.MouseEvent evt) {        btnRemoveCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_excluirClaro.png")));
+    }
+    private void btnSearchCustomerMouseClicked(java.awt.event.MouseEvent evt) {        String str = cSearchCustomer.getText();
 
         Utils.updateTable(CustomerDao.search(str), tableCustomers);
-    }//GEN-LAST:event_btnSearchCustomerMouseClicked
-
-    private void btnSearchCustomerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSearchCustomerMouseEntered
-        btnSearchCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisar.png")));
-    }//GEN-LAST:event_btnSearchCustomerMouseEntered
-
-    private void btnSearchCustomerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSearchCustomerMouseExited
-        btnSearchCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));
-    }//GEN-LAST:event_btnSearchCustomerMouseExited
-
-    private void novaVenda2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novaVenda2MouseEntered
-        novaVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novaVendaAzul.png")));
-    }//GEN-LAST:event_novaVenda2MouseEntered
-
-    private void novaVenda2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novaVenda2MouseExited
-        novaVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novaVenda.png")));
-    }//GEN-LAST:event_novaVenda2MouseExited
-
-    private void novoProduto2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novoProduto2MouseEntered
-        novoProduto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoProdutoAzul.png")));
-    }//GEN-LAST:event_novoProduto2MouseEntered
-
-    private void novoProduto2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novoProduto2MouseExited
-        novoProduto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoProduto.png")));
-    }//GEN-LAST:event_novoProduto2MouseExited
-
-    private void novoCliente2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novoCliente2MouseEntered
-        novoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoClienteAzul.png")));
-    }//GEN-LAST:event_novoCliente2MouseEntered
-
-    private void novoCliente2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novoCliente2MouseExited
-        novoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoCliente.png")));
-    }//GEN-LAST:event_novoCliente2MouseExited
-
-    private void buscarCliente2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarCliente2MouseEntered
-        buscarCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarClienteAzul.png")));
-    }//GEN-LAST:event_buscarCliente2MouseEntered
-
-    private void buscarCliente2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarCliente2MouseExited
-        buscarCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarCliente.png")));
-    }//GEN-LAST:event_buscarCliente2MouseExited
-
-    private void buscarVenda2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarVenda2MouseEntered
-        buscarVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarVendaAzul.png")));
-    }//GEN-LAST:event_buscarVenda2MouseEntered
-
-    private void buscarVenda2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarVenda2MouseExited
-        buscarVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarVenda.png")));
-    }//GEN-LAST:event_buscarVenda2MouseExited
-
-    private void btn_FilterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_FilterMouseClicked
-        productFilterVisibility = !productFilterVisibility;
+    }
+    private void btnSearchCustomerMouseEntered(java.awt.event.MouseEvent evt) {        btnSearchCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisar.png")));
+    }
+    private void btnSearchCustomerMouseExited(java.awt.event.MouseEvent evt) {        btnSearchCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));
+    }
+    private void novaVenda2MouseEntered(java.awt.event.MouseEvent evt) {        novaVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novaVendaAzul.png")));
+    }
+    private void novaVenda2MouseExited(java.awt.event.MouseEvent evt) {        novaVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novaVenda.png")));
+    }
+    private void novoProduto2MouseEntered(java.awt.event.MouseEvent evt) {        novoProduto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoProdutoAzul.png")));
+    }
+    private void novoProduto2MouseExited(java.awt.event.MouseEvent evt) {        novoProduto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoProduto.png")));
+    }
+    private void novoCliente2MouseEntered(java.awt.event.MouseEvent evt) {        novoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoClienteAzul.png")));
+    }
+    private void novoCliente2MouseExited(java.awt.event.MouseEvent evt) {        novoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_novoCliente.png")));
+    }
+    private void buscarCliente2MouseEntered(java.awt.event.MouseEvent evt) {        buscarCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarClienteAzul.png")));
+    }
+    private void buscarCliente2MouseExited(java.awt.event.MouseEvent evt) {        buscarCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarCliente.png")));
+    }
+    private void buscarVenda2MouseEntered(java.awt.event.MouseEvent evt) {        buscarVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarVendaAzul.png")));
+    }
+    private void buscarVenda2MouseExited(java.awt.event.MouseEvent evt) {        buscarVenda2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_buscarVenda.png")));
+    }
+    private void btn_FilterMouseClicked(java.awt.event.MouseEvent evt) {        productFilterVisibility = !productFilterVisibility;
         
         Filter_Background.setVisible(productFilterVisibility);
         filter_btn_Cancel.setVisible(productFilterVisibility);        
@@ -2429,8 +2168,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             setSelectedProductFilterOrNull("brand", filter_cb_Brand);
             setSelectedProductFilterOrNull("size", filter_cb_Size);
         }
-    }//GEN-LAST:event_btn_FilterMouseClicked
-
+    }
     private void setSelectedProductFilterOrNull(String key, javax.swing.JComboBox comboBox) {
         Object obj = productSelectedFilters.get(key);
         if (obj == null) {
@@ -2441,16 +2179,11 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         }
     }
     
-    private void btn_FilterMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_FilterMouseEntered
-        
-    }//GEN-LAST:event_btn_FilterMouseEntered
-
-    private void btn_FilterMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_FilterMouseExited
-        
-    }//GEN-LAST:event_btn_FilterMouseExited
-
-    private void btnEditCustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditCustomerMouseClicked
-        if (!hasPermission("customer")) {
+    private void btn_FilterMouseEntered(java.awt.event.MouseEvent evt) {        
+    }
+    private void btn_FilterMouseExited(java.awt.event.MouseEvent evt) {        
+    }
+    private void btnEditCustomerMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("customer")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2470,56 +2203,38 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             JOptionPane.showMessageDialog(null, "Você deve selecionar um cliente para poder editar.",
                     "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btnEditCustomerMouseClicked
-
-    private void btnEditCustomerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditCustomerMouseEntered
-        btnEditCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_EditarEscuro.png")));
-    }//GEN-LAST:event_btnEditCustomerMouseEntered
-
-    private void btnEditCustomerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditCustomerMouseExited
-        btnEditCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));
-    }//GEN-LAST:event_btnEditCustomerMouseExited
-
-    private void cSearchCustomerKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cSearchCustomerKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+    }
+    private void btnEditCustomerMouseEntered(java.awt.event.MouseEvent evt) {        btnEditCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_EditarEscuro.png")));
+    }
+    private void btnEditCustomerMouseExited(java.awt.event.MouseEvent evt) {        btnEditCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_Editar.png")));
+    }
+    private void cSearchCustomerKeyPressed(java.awt.event.KeyEvent evt) {        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
 
             String str = cSearchCustomer.getText();
 
             Utils.updateTable(CustomerDao.search(str), tableCustomers);
 
         }
-    }//GEN-LAST:event_cSearchCustomerKeyPressed
-
-    private void novaVenda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novaVenda2MouseClicked
-        if (!hasPermission("sale")) {
+    }
+    private void novaVenda2MouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("sale")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
         New_Sale frame = new New_Sale();
         frame.subscribeDataChangeListener(this);
         frame.setVisible(true);
-    }//GEN-LAST:event_novaVenda2MouseClicked
-
-    private void novoProduto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novoProduto2MouseClicked
-        menu_productMouseClicked(evt);
+    }
+    private void novoProduto2MouseClicked(java.awt.event.MouseEvent evt) {        menu_productMouseClicked(evt);
         btn_addProductMouseClicked(evt);
-    }//GEN-LAST:event_novoProduto2MouseClicked
-
-    private void novoCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_novoCliente2MouseClicked
-        menu_customersMouseClicked(evt);
+    }
+    private void novoCliente2MouseClicked(java.awt.event.MouseEvent evt) {        menu_customersMouseClicked(evt);
         btnNewCustomerMouseClicked(evt);
-    }//GEN-LAST:event_novoCliente2MouseClicked
-
-    private void buscarCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarCliente2MouseClicked
-        menu_customersMouseClicked(evt);
-    }//GEN-LAST:event_buscarCliente2MouseClicked
-
-    private void buscarVenda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarVenda2MouseClicked
-        menu_saleMouseClicked(evt);
-    }//GEN-LAST:event_buscarVenda2MouseClicked
-
-    private void table_EmployeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_EmployeesMouseClicked
-        if (!hasPermission("employee")) {
+    }
+    private void buscarCliente2MouseClicked(java.awt.event.MouseEvent evt) {        menu_customersMouseClicked(evt);
+    }
+    private void buscarVenda2MouseClicked(java.awt.event.MouseEvent evt) {        menu_saleMouseClicked(evt);
+    }
+    private void table_EmployeesMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("employee")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2547,18 +2262,10 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             txtEmployeeNeigh.setText(emp.getAddress().getNeighborhood());
             txtEmployeeCity.setText(emp.getAddress().getCity());
         }
-    }//GEN-LAST:event_table_EmployeesMouseClicked
-
-    private void txtEmployeePhoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmployeePhoneActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmployeePhoneActionPerformed
-
-    private void txtEmployeeNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmployeeNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmployeeNameActionPerformed
-
-    private void btn_SearchProductsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SearchProductsMouseClicked
-        String str = txtProductsSearchField.getText();
+    }
+    private void txtEmployeePhoneActionPerformed(java.awt.event.ActionEvent evt) {            }
+    private void txtEmployeeNameActionPerformed(java.awt.event.ActionEvent evt) {            }
+    private void btn_SearchProductsMouseClicked(java.awt.event.MouseEvent evt) {        String str = txtProductsSearchField.getText();
         
         if (productSelectedFilters.size() > 0) {
             Category cat = (Category) productSelectedFilters.get("category");
@@ -2571,18 +2278,12 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         else {
             Utils.updateTable(ProductDao.search(str), table_Products);
         }
-    }//GEN-LAST:event_btn_SearchProductsMouseClicked
-
-    private void btn_SearchProductsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SearchProductsMouseEntered
-       btn_SearchProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisar.png")));
-    }//GEN-LAST:event_btn_SearchProductsMouseEntered
-
-    private void btn_SearchProductsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SearchProductsMouseExited
-        btn_SearchProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));
-    }//GEN-LAST:event_btn_SearchProductsMouseExited
-
-    private void filter_btn_CancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_CancelMouseClicked
-        filter_cb_Brand.setSelectedIndex(0);
+    }
+    private void btn_SearchProductsMouseEntered(java.awt.event.MouseEvent evt) {       btn_SearchProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisar.png")));
+    }
+    private void btn_SearchProductsMouseExited(java.awt.event.MouseEvent evt) {        btn_SearchProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_pesquisarClaro.png")));
+    }
+    private void filter_btn_CancelMouseClicked(java.awt.event.MouseEvent evt) {        filter_cb_Brand.setSelectedIndex(0);
         filter_cb_Category.setSelectedIndex(0);
         filter_cb_Color.setSelectedIndex(0);
         filter_cb_Size.setSelectedIndex(0);
@@ -2590,18 +2291,12 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         productSelectedFilters.clear();
         
         Utils.updateTable(ProductDao.findAll(), table_Products);
-    }//GEN-LAST:event_filter_btn_CancelMouseClicked
-
-    private void filter_btn_CancelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_CancelMouseEntered
-    filter_btn_Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltroEscuro.png")));
-    }//GEN-LAST:event_filter_btn_CancelMouseEntered
-
-    private void filter_btn_CancelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_CancelMouseExited
-    filter_btn_Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png")));
-    }//GEN-LAST:event_filter_btn_CancelMouseExited
-
-    private void filter_btn_ApplyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_ApplyMouseClicked
-        int selectedCategory = filter_cb_Category.getSelectedIndex();
+    }
+    private void filter_btn_CancelMouseEntered(java.awt.event.MouseEvent evt) {    filter_btn_Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltroEscuro.png")));
+    }
+    private void filter_btn_CancelMouseExited(java.awt.event.MouseEvent evt) {    filter_btn_Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png")));
+    }
+    private void filter_btn_ApplyMouseClicked(java.awt.event.MouseEvent evt) {        int selectedCategory = filter_cb_Category.getSelectedIndex();
         int selectedBrand = filter_cb_Brand.getSelectedIndex();
         int selectedColor = filter_cb_Color.getSelectedIndex();
         int selectedSize = filter_cb_Size.getSelectedIndex();
@@ -2619,29 +2314,18 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         List<Product> products = Utils.productFilters(ProductDao.findAll(), cat, brand, color, size);
         products.sort((p1, p2) -> p1.getDescription().compareTo(p2.getDescription()));
         Utils.updateTable(products, table_Products);
-    }//GEN-LAST:event_filter_btn_ApplyMouseClicked
-
-    private void filter_btn_ApplyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_ApplyMouseEntered
-        filter_btn_Apply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltroEscuro.png"))); 
-    }//GEN-LAST:event_filter_btn_ApplyMouseEntered
-
-    private void filter_btn_ApplyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_ApplyMouseExited
-    filter_btn_Apply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png"))); 
-    }//GEN-LAST:event_filter_btn_ApplyMouseExited
-
-    private void Card_ProductsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Card_ProductsMouseClicked
-        if (productFilterVisibility) {
+    }
+    private void filter_btn_ApplyMouseEntered(java.awt.event.MouseEvent evt) {        filter_btn_Apply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltroEscuro.png"))); 
+    }
+    private void filter_btn_ApplyMouseExited(java.awt.event.MouseEvent evt) {    filter_btn_Apply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png"))); 
+    }
+    private void Card_ProductsMouseClicked(java.awt.event.MouseEvent evt) {        if (productFilterVisibility) {
             btn_FilterMouseClicked(evt);
         }
-    }//GEN-LAST:event_Card_ProductsMouseClicked
-
-    private void Filter_BackgroundMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Filter_BackgroundMouseClicked
-        //Este evento serve para evitar que a tela de filtro de produto feche ao clicar com o mouse nele mesmo
-        Filter_Background.requestFocusInWindow();
-    }//GEN-LAST:event_Filter_BackgroundMouseClicked
-
-    private void btn_Filter_SaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Filter_SaleMouseClicked
-        saleFilterVisibility = !saleFilterVisibility;
+    }
+    private void Filter_BackgroundMouseClicked(java.awt.event.MouseEvent evt) {                Filter_Background.requestFocusInWindow();
+    }
+    private void btn_Filter_SaleMouseClicked(java.awt.event.MouseEvent evt) {        saleFilterVisibility = !saleFilterVisibility;
         
         Filter_BackgroundSale.setVisible(saleFilterVisibility);
         filter_btn_Cancel_Sale.setVisible(saleFilterVisibility);        
@@ -2666,37 +2350,19 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             dateEnd.setMaxSelectableDate(new Date());
             dateStart.setMaxSelectableDate(new Date());
         }
-    }//GEN-LAST:event_btn_Filter_SaleMouseClicked
-
-    private void btn_Filter_SaleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Filter_SaleMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_Filter_SaleMouseEntered
-
-    private void btn_Filter_SaleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Filter_SaleMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_Filter_SaleMouseExited
-
-    private void Filter_BackgroundSaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Filter_BackgroundSaleMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Filter_BackgroundSaleMouseClicked
-
-    private void filter_btn_Cancel_SaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_Cancel_SaleMouseClicked
-        // TODO add your handling code here:
-        dateStart.setDate(null);
+    }
+    private void btn_Filter_SaleMouseEntered(java.awt.event.MouseEvent evt) {            }
+    private void btn_Filter_SaleMouseExited(java.awt.event.MouseEvent evt) {            }
+    private void Filter_BackgroundSaleMouseClicked(java.awt.event.MouseEvent evt) {            }
+    private void filter_btn_Cancel_SaleMouseClicked(java.awt.event.MouseEvent evt) {                dateStart.setDate(null);
         dateEnd.setDate(null);
         Utils.updateTable(SaleDao.findAll(), tableSales);
-    }//GEN-LAST:event_filter_btn_Cancel_SaleMouseClicked
-
-    private void filter_btn_Cancel_SaleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_Cancel_SaleMouseEntered
-        filter_btn_Cancel_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltroEscuro.png")));
-    }//GEN-LAST:event_filter_btn_Cancel_SaleMouseEntered
-
-    private void filter_btn_Cancel_SaleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_Cancel_SaleMouseExited
-        filter_btn_Cancel_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png")));
-    }//GEN-LAST:event_filter_btn_Cancel_SaleMouseExited
-
-    private void filter_btn_Apply_SaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_Apply_SaleMouseClicked
-        Date start = dateStart.getDate();
+    }
+    private void filter_btn_Cancel_SaleMouseEntered(java.awt.event.MouseEvent evt) {        filter_btn_Cancel_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltroEscuro.png")));
+    }
+    private void filter_btn_Cancel_SaleMouseExited(java.awt.event.MouseEvent evt) {        filter_btn_Cancel_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_CancelarFiltro.png")));
+    }
+    private void filter_btn_Apply_SaleMouseClicked(java.awt.event.MouseEvent evt) {        Date start = dateStart.getDate();
         Date end = dateEnd.getDate();
         
         try {
@@ -2704,18 +2370,12 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         } catch (IllegalArgumentException e) {
             JOptionPane.showMessageDialog(null, e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_filter_btn_Apply_SaleMouseClicked
-
-    private void filter_btn_Apply_SaleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_Apply_SaleMouseEntered
-        filter_btn_Apply_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltroEscuro.png")));
-    }//GEN-LAST:event_filter_btn_Apply_SaleMouseEntered
-
-    private void filter_btn_Apply_SaleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_filter_btn_Apply_SaleMouseExited
-        filter_btn_Apply_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png")));
-    }//GEN-LAST:event_filter_btn_Apply_SaleMouseExited
-
-    private void tableSalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableSalesMouseClicked
-        if (!hasPermission("sale")) {
+    }
+    private void filter_btn_Apply_SaleMouseEntered(java.awt.event.MouseEvent evt) {        filter_btn_Apply_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltroEscuro.png")));
+    }
+    private void filter_btn_Apply_SaleMouseExited(java.awt.event.MouseEvent evt) {        filter_btn_Apply_Sale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon_AplicarFiltro.png")));
+    }
+    private void tableSalesMouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("sale")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2736,19 +2396,15 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         else if (evt.getClickCount() == 2 && SwingUtilities.isLeftMouseButton(evt)) {
             menuSaleInfoActionPerformed(null);
         }
-    }//GEN-LAST:event_tableSalesMouseClicked
-
-    private void iconeOcultar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconeOcultar1MouseClicked
-        if (!hasPermission("homeinfo")) {
+    }
+    private void iconeOcultar1MouseClicked(java.awt.event.MouseEvent evt) {        if (!hasPermission("homeinfo")) {
             JOptionPane.showMessageDialog(null, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
         homeInfoVisibility = !homeInfoVisibility;
         refreshHomeData();
-    }//GEN-LAST:event_iconeOcultar1MouseClicked
-
-    private void table_ProductsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_ProductsMouseClicked
-        JTable table =(JTable) evt.getSource();
+    }
+    private void table_ProductsMouseClicked(java.awt.event.MouseEvent evt) {        JTable table =(JTable) evt.getSource();
         java.awt.Point point = evt.getPoint();
         int row = table.rowAtPoint(point);
         table.setRowSelectionInterval(row, row);
@@ -2765,10 +2421,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         else if (evt.getClickCount() == 2 && SwingUtilities.isLeftMouseButton(evt)) {
             btnAddProductActionPerformed(null);
         }
-    }//GEN-LAST:event_table_ProductsMouseClicked
-
-    private void btnAddProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProductActionPerformed
-        if (!hasPermission("product")) {
+    }
+    private void btnAddProductActionPerformed(java.awt.event.ActionEvent evt) {        if (!hasPermission("product")) {
             JOptionPane.showMessageDialog(this, PERMISSION_ERROR, "Erro", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2785,19 +2439,13 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             dialog.setVisible(true);
             Utils.updateTable(ProductDao.findAll(), table_Products);
         }
-    }//GEN-LAST:event_btnAddProductActionPerformed
-
-    private void HeadMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HeadMousePressed
-        mouseX = evt.getX();
+    }
+    private void HeadMousePressed(java.awt.event.MouseEvent evt) {        mouseX = evt.getX();
         mouseY = evt.getY();
-    }//GEN-LAST:event_HeadMousePressed
-
-    private void HeadMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HeadMouseDragged
-        this.setLocation(this.getX() + evt.getX() - mouseX, this.getY() + evt.getY() - mouseY);
-    }//GEN-LAST:event_HeadMouseDragged
-
-    private void menuSaleInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuSaleInfoActionPerformed
-
+    }
+    private void HeadMouseDragged(java.awt.event.MouseEvent evt) {        this.setLocation(this.getX() + evt.getX() - mouseX, this.getY() + evt.getY() - mouseY);
+    }
+    private void menuSaleInfoActionPerformed(java.awt.event.ActionEvent evt) {
         int row = tableSales.getSelectedRow();
         
         if (row != -1) {
@@ -2808,32 +2456,22 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
             SaleInfo dialog = new SaleInfo(this, true, sale);
             dialog.setVisible(true);
         }
-    }//GEN-LAST:event_menuSaleInfoActionPerformed
-
-    private void btnChangePasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnChangePasswordMouseClicked
-        Change_Password dialog = new Change_Password(this, true);
+    }
+    private void btnChangePasswordMouseClicked(java.awt.event.MouseEvent evt) {        Change_Password dialog = new Change_Password(this, true);
         dialog.setVisible(true);
-    }//GEN-LAST:event_btnChangePasswordMouseClicked
-
-    private void btnExitSystemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitSystemMouseClicked
-        int option = JOptionPane.showConfirmDialog(this, "Você tem certeza que quer sair?", 
+    }
+    private void btnExitSystemMouseClicked(java.awt.event.MouseEvent evt) {        int option = JOptionPane.showConfirmDialog(this, "Você tem certeza que quer sair?", 
                     "Atenção!", JOptionPane.INFORMATION_MESSAGE);
             
         if (option != 0) return;
         
         new Login().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnExitSystemMouseClicked
-
-    /**
-     * @param args the command line arguments
-     */
+    }
+    
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
+                
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -2850,9 +2488,8 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+        
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Home().setVisible(true);
@@ -2860,8 +2497,7 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Address;
+        private javax.swing.JLabel Address;
     private javax.swing.JLabel BirthDate;
     private javax.swing.JLabel CEP;
     private javax.swing.JLabel CPF;
@@ -3030,6 +2666,5 @@ public class Home extends javax.swing.JFrame implements DataChangeListener {
     private javax.swing.JLabel txtTicketValor;
     private javax.swing.JLabel txtTotalSales;
     private javax.swing.JLabel txtVendas;
-    // End of variables declaration//GEN-END:variables
-
+    
 }
